@@ -285,6 +285,19 @@ body {
 	flex: 1;
 }
 
+.bigtext {
+	display: flex; /* Ensures the children are aligned in a row */
+	align-items: flex-start; /* Adjust vertical alignment */
+	justify-content: flex-start; /* Aligns items to the left initially */
+}
+.bigtext-right {
+	margin-left: 180px; /* Adjust the value to move it further to the right */
+	text-align: left; /* Ensure text alignment is consistent */
+}
+.bigtext-left {
+	margin-left: 200px;
+}
+
 /* Stack text and image vertically on smaller screens */
 @media (max-width: 768px) {
 	.other {
