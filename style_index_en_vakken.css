@@ -1,0 +1,382 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*index css*/
+/* Normalize */
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+h1 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 48px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h2 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 40px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h3 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 32px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h5 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 16px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h6 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 8px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #bf2126;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	text-decoration: none;
+	color: #bf2126;
+	list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	font-family: "Inter", sans-serif;
+	color: white;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Scrolling Banner Styles */
+.scrolling-banner {
+	background-color: red; /* Red background for the banner */
+	color: white; /* White text color */
+	width: 100%; /* Full width */
+	overflow: hidden; /* Hide text that moves outside the banner */
+	padding: 15px 0; /* Add padding inside the banner */
+	box-sizing: border-box; /* Include padding in the width calculation */
+	z-index: 1000; /* Make sure it appears above other content */
+	position: relative;
+}
+
+.scrolling-text {
+	display: flex; /* Using flex to line up the text side by side */
+	width: 100%; /* Full width of the banner */
+	animation: scroll-left 20s linear infinite; /* Infinite scroll animation */
+}
+
+.scrolling-text span {
+	white-space: nowrap; /* Prevent text wrapping */
+	flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Keyframes for smooth scrolling animation */
+@keyframes scroll-left {
+	0% {
+		transform: translateX(100%); /* Start from the right */
+	}
+	100% {
+		transform: translateX(-100%); /* Move the text completely off to the left */
+	}
+}
+
+/* Header Styles */
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between; /* Space between logo and navigation */
+	align-items: center; /* Vertically center content */
+	background-color: black;
+	padding: 10px 50px; /* Adjust spacing around header */
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.header > div {
+	display: flex;
+	align-items: center;
+}
+
+.header p {
+	margin-left: 20px; /* Spacing for navigation text */
+}
+
+/* Hero Section */
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 40px 20px; /* Add spacing around the hero */
+}
+
+.hero-text {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.hero-image img {
+	max-width: 100%;
+	width: 500px;
+	height: auto;
+}
+
+/* Carousel Container - Side by side with text */
+.carousel-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 40px 20px;
+	width: 80%; /* Adjust the width of the entire container */
+	margin-left: 150px;
+}
+
+.carousel-text {
+	flex: 1; /* Allow text to take up equal space */
+	padding-right: 20px; /* Add some space between text and carousel */
+}
+
+.carousel {
+	position: relative;
+	width: 65%; /* Adjust width to make carousel smaller */
+}
+
+.image-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-container img {
+	width: 100%;
+	height: auto;
+}
+
+/* Arrows styling */
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: red;
+	font-size: 2rem;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.left {
+	left: calc(100px);
+}
+
+.right {
+	right: calc(50px);
+}
+
+.other {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px; /* Reduced gap between text and image */
+	padding: 10px; /* Adjust padding to reduce space around content */
+	text-align: center;
+}
+
+.other-text,
+.other-image {
+	flex: 1;
+}
+
+/* Stack text and image vertically on smaller screens */
+@media (max-width: 768px) {
+	.other {
+		flex-direction: column;
+		gap: 5px; /* Reduce the gap further for mobile */
+	}
+
+	.other-image img {
+		width: 100%; /* Full width on small screens */
+		max-width: 400px; /* Set a max width for the image */
+	}
+}
+
+.reverse {
+	flex-direction: row-reverse; /* Reverse the layout for alternating images */
+}
+
+.footer {
+	background-color: black;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0; /* Add padding to the footer */
+	text-align: center;
+	gap: 20px; /* Space between items */
+}
+.footer p {
+}
+
+.logo1 {
+	display: flex;
+	align-items: center;
+}
+
+.logo1 img {
+	height: 130px;
+	margin-right: 50px;
+}
+
+.school-name span:first-child {
+	display: block;
+	font-weight: normal;
+}
+
+.footer-links a {
+	margin-right: 100px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.footer-links a:hover {
+	color: #bf2126;
+}
+
+.footer-icons img {
+	margin: 50px;
+	height: 50px;
+}
+
+.footer-icons1 img {
+	height: 50px;
+	margin-right: 150px;
+}
+
+/*index css einde*/
+
+/*vakken css begin*/
+
+/* Navigation Bar */
+
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation ul li {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+/* Logo */
+
+.logo {
+	flex: 1; /* Push the logo to the left */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.logo img {
+	height: 200px; /* Consistent logo size */
+	max-width: none; /* Ensure proper scaling */
+	object-fit: contain; /* Maintain the aspect ratio */
+	padding-right: 350px;
+
+	width: auto;
+}
+
+/* Navigation Bar */
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	padding: 10px 150px;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+/* Navigation Links */
+.menu {
+	display: flex;
+	gap: 150px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #bf2126;
+}
+
+.full-width-video {
+	width: 100%; /* Full width */
+	height: auto; /* Maintain aspect ratio */
+	display: block; /* Remove any inline gaps */
+	object-fit: cover; /* Optional: Ensure the video covers the area */
+}
