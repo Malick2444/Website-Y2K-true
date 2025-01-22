@@ -87,7 +87,7 @@ p {
 
 a {
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 800;
+	font-weight: 100;
 	text-decoration: none;
 	color: #bf2126;
 	list-style: none;
@@ -95,6 +95,7 @@ a {
 
 /* Scrolling Banner Styles */
 .scrolling-banner {
+	margin-bottom: 100px;
 	background-color: #bf2126;
 	color: white;
 	width: 100%;
@@ -126,33 +127,39 @@ a {
 }
 
 /* Navigation Bar */
+
 .nav-bar {
+	justify-content: flex-start;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	background-color: black;
-	padding: 10px 150px;
+	padding-top: 0px;
 	text-decoration: none;
 }
 
 /* Logo */
+
 .logo img {
-	margin-top: 70px;
-	height: 90px;
-	margin-right: 250px;
+	max-width: none;
+	max-height: none;
+	width: 350px;
+	height: auto;
+	object-fit: cover;
+	padding-top: 100px;
+	margin-left: 100px;
 }
 
 /* Navigation Links */
 .menu {
 	display: flex;
-	gap: 210px;
+	gap: 190px;
+	margin-right: 100px;
+	margin-left: 200px;
 }
 
 .menu a {
-	margin-top: 70px;
+	margin-top: 130px;
 	color: white;
 	text-decoration: none;
-	font-size: 18px;
 	font-size: 23pt;
 	z-index: 10;
 }
@@ -183,7 +190,7 @@ a {
 	color: white;
 	text-align: right;
 	padding-top: 30px;
-	margin-left: 250px;
+	margin-left: 450px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
@@ -191,7 +198,7 @@ a {
 	display: flex;
 	justify-content: right;
 	text-align: right;
-	margin-left: 300px;
+	margin-left: 380px;
 	margin-top: 200px;
 	padding-left: 600px;
 	height: 40px;
@@ -227,7 +234,7 @@ a {
 	text-align: left;
 	padding-top: 30px;
 	padding-left: 100px;
-	padding-right: 330px;
+	padding-right: 350px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
@@ -248,6 +255,7 @@ a {
 	justify-content: start;
 	align-items: left;
 	width: 600px;
+	padding-left: 100px;
 }
 
 /* third image */
@@ -271,7 +279,7 @@ a {
 	color: white;
 	text-align: right;
 	padding-top: 30px;
-	margin-left: 250px;
+	margin-left: 480px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
@@ -279,7 +287,7 @@ a {
 	display: flex;
 	justify-content: right;
 	text-align: right;
-	margin-left: 300px;
+	margin-left: 520px;
 	margin-top: 200px;
 	padding-left: 600px;
 	height: 40px;
@@ -292,51 +300,59 @@ a {
 	justify-content: start;
 	align-items: left;
 	width: 600px;
+	margin-left: 40px;
 }
 
 /* Footer */
 
-/* Navigation Bar */
-.nav-bar2 {
+footer {
+	background-color: black;
+	color: #fff;
+	padding: 15px;
+}
+
+.footer {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	background-color: #bf2126;
-	padding: 10px 150px;
-	padding-right: 400px;
-	text-decoration: none;
+	justify-content: center;
 }
 
-/* Logo */
-.logo img {
-	margin-top: 35px;
-	margin-bottom: 35px;
-	height: 90px;
-	margin-right: 200px;
-}
-
-/* Navigation Links */
-.menu2 {
+.logo1 {
 	display: flex;
-	gap: 50px;
+	align-items: center;
 }
 
-.menu2 a {
-	padding-left: 60px;
-	margin-top: 35px;
-	margin-bottom: 35px;
-	color: white;
+.logo1 img {
+	margin-left: 0px;
+	margin-right: 200px;
+	width: 400px;
+	height: auto;
+}
+
+.school-name span:first-child {
+	display: block;
+	font-weight: bold;
+}
+
+.footer-links a {
+	margin-right: 50px;
 	text-decoration: none;
-	font-size: 23px;
-
-	z-index: 11;
-}
-.menu2 img {
-	background-color: red;
-	width: 50px;
+	color: #fff;
+	font-size: 23pt;
 }
 
-.menu a:hover {
-	text-decoration: none;
+.footer-links a:hover {
 	color: #bf2126;
+}
+
+.footer-icons img {
+	margin-right: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 50px;
+}
+
+.footer-icons1 img {
+	height: 50px;
+	margin-right: 0px;
 }
