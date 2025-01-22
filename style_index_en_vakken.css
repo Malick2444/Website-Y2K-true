@@ -35,7 +35,7 @@ h2 {
 h3 {
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 		"Times New Roman", serif;
-	font-size: 32px;
+	font-size: 50px;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 800;
@@ -80,6 +80,7 @@ h6 {
 p {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #bf2126;
+	font-size: 20px;
 }
 
 a {
@@ -176,38 +177,71 @@ body {
 	width: 500px;
 	height: auto;
 }
-
-/* Carousel Container - Side by side with text */
 .carousel-container {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	margin: 40px 20px;
-	width: 80%; /* Adjust the width of the entire container */
-	margin-left: 150px;
-}
-
-.carousel-text {
-	flex: 1; /* Allow text to take up equal space */
-	padding-right: 20px; /* Add some space between text and carousel */
+	width: 100%;
+	max-width: 1200px; /* Adjust the max width to your preference */
+	margin: 0 auto;
+	position: relative;
 }
 
 .carousel {
-	position: relative;
-	width: 65%; /* Adjust width to make carousel smaller */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
 }
 
-.image-container {
+.carousel-item {
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
-	overflow: hidden;
 }
 
-.carousel-container img {
-	width: 100%;
+.carousel-text {
+	flex: 1;
+	padding-right: 20px;
+	text-align: left;
+	margin-top: 200px;
+	margin-left: -100px;
+}
+
+.carousel-text h3 {
+	line-height: 1.5;
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+
+.carousel-image {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	margin-right: 500px;
+	width: 80%;
 	height: auto;
+	margin-top: -50px;
 }
 
-/* Arrows styling */
+.carousel-image img {
+	width: 300%;
+	height: auto;
+	object-fit: contain;
+	margin-left: 500px;
+}
+
+#carouselTitle {
+	line-height: 1.5; /* Adjust line spacing */
+	font-size: 24px; /* Font size for readability */
+	text-align: left; /* Align text as needed */
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+
 .arrow {
 	position: absolute;
 	top: 50%;
@@ -222,11 +256,11 @@ body {
 }
 
 .left {
-	left: calc(100px);
+	left: 30%; /* Move the left arrow closer to the image */
 }
 
 .right {
-	right: calc(50px);
+	right: -10%; /* Move the right arrow closer to the image */
 }
 
 .other {
@@ -235,7 +269,15 @@ body {
 	justify-content: center;
 	gap: 5px; /* Reduced gap between text and image */
 	padding: 10px; /* Adjust padding to reduce space around content */
-	text-align: center;
+	text-align: left;
+	margin-right: 10%;
+}
+
+.other-image img {
+	max-width: 400px;
+	height: auto;
+	object-fit: cover;
+	margin-left: 20%;
 }
 
 .other-text,
@@ -258,9 +300,9 @@ body {
 
 .reverse {
 	flex-direction: row-reverse; /* Reverse the layout for alternating images */
+	margin-left: 10%;
 }
-
-.footer {
+.reverse .footer {
 	background-color: black;
 	color: #fff;
 	display: flex;
@@ -269,8 +311,6 @@ body {
 	padding: 20px 0; /* Add padding to the footer */
 	text-align: center;
 	gap: 20px; /* Space between items */
-}
-.footer p {
 }
 
 .logo1 {
@@ -286,6 +326,17 @@ body {
 .school-name span:first-child {
 	display: block;
 	font-weight: normal;
+}
+.footer {
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-wrap: wrap; /* Enable wrapping for smaller screens */
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	gap: 20px; /* Adds space between items */
+	text-align: center;
 }
 
 .footer-links a {
@@ -378,5 +429,6 @@ body {
 	width: 100%; /* Full width */
 	height: auto; /* Maintain aspect ratio */
 	display: block; /* Remove any inline gaps */
-	object-fit: cover; /* Optional: Ensure the video covers the area */
+	object-fit: cover; /* Ensure the video covers the area */
+	max-width: 100%; /* Prevent video from overflowing its container */
 }
