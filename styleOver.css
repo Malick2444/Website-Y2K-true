@@ -1,0 +1,358 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Normalize */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	font-family: "Inter", sans-serif;
+	color: white;
+}
+
+h1 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 48px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h2 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 40px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h3 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 32px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h4 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h5 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 16px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+h6 {
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 8px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #bf2126;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	text-decoration: none;
+	color: #bf2126;
+	list-style: none;
+}
+
+/* Scrolling Banner Styles */
+.scrolling-banner {
+	margin-bottom: 100px;
+	background-color: #bf2126;
+	color: white;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap; /* Prevent text wrapping */
+	padding: 15px 0;
+	box-sizing: border-box;
+	z-index: 1000; /* Make sure it appears above other content */
+}
+
+.scrolling-text {
+	display: inline-block; /* Allow text to scroll smoothly */
+	animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+	padding-left: 100%; /* Start the text off-screen */
+}
+
+/* Keyframes for Scrolling Animation */
+@keyframes scroll-left {
+	from {
+		transform: translateX(0); /* Text starts in the visible area */
+	}
+	to {
+		transform: translateX(-100%); /* Text moves completely out of the banner */
+	}
+}
+
+.header {
+	width: 100%;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+	justify-content: flex-start;
+	display: flex;
+	background-color: black;
+	padding-top: 0px;
+	text-decoration: none;
+}
+
+/* Logo */
+
+.logo img {
+	max-width: none;
+	max-height: none;
+	width: 350px;
+	height: auto;
+	object-fit: cover;
+	padding-top: 100px;
+	margin-left: 100px;
+}
+
+/* Navigation Links */
+.menu {
+	display: flex;
+	gap: 190px;
+	margin-right: 100px;
+	margin-left: 200px;
+}
+
+.menu a {
+	margin-top: 130px;
+	color: white;
+	text-decoration: none;
+	font-size: 23pt;
+	z-index: 10;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #bf2126;
+}
+
+/* First Image */
+
+.twinkle {
+	display: flex;
+	justify-content: start;
+	text-align: right;
+	margin-right: 100px;
+	margin-top: 100px;
+}
+.twinkleExtra {
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	text-align: right;
+	margin-right: 100px;
+}
+.twinkleExtra p {
+	display: flex;
+	color: white;
+	text-align: right;
+	padding-top: 30px;
+	margin-left: 450px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+}
+.twinkleExtra h1 {
+	display: flex;
+	justify-content: right;
+	text-align: right;
+	margin-left: 380px;
+	margin-top: 200px;
+	padding-left: 600px;
+	height: 40px;
+	width: 190px;
+}
+
+.twinkle img {
+	display: flex;
+	display: inline-block;
+	justify-content: start;
+	align-items: left;
+	width: 600px;
+}
+
+/* second image */
+
+.school {
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+}
+.schoolExtra {
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	text-align: left;
+	margin-right: 100px;
+}
+.schoolExtra p {
+	display: flex;
+	color: white;
+	text-align: left;
+	padding-top: 30px;
+	padding-left: 100px;
+	padding-right: 350px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+}
+.schoolExtra h1 {
+	display: flex;
+	justify-content: left;
+	text-align: left;
+	margin-left: 0px;
+	margin-top: 200px;
+	padding-left: 100px;
+	height: 40px;
+	width: 190px;
+}
+
+.school img {
+	display: flex;
+	display: inline-block;
+	justify-content: start;
+	align-items: left;
+	width: 600px;
+	padding-left: 100px;
+}
+
+/* third image */
+
+.studeren {
+	display: flex;
+	justify-content: start;
+	text-align: right;
+	margin-right: 100px;
+	margin-top: 0px;
+}
+.studerenExtra {
+	flex-direction: column;
+	display: flex;
+	justify-content: start;
+	text-align: right;
+	margin-right: 100px;
+}
+.studerenExtra p {
+	display: flex;
+	color: white;
+	text-align: right;
+	padding-top: 30px;
+	margin-left: 480px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+}
+.studerenExtra h1 {
+	display: flex;
+	justify-content: right;
+	text-align: right;
+	margin-left: 520px;
+	margin-top: 200px;
+	padding-left: 600px;
+	height: 40px;
+	width: 190px;
+}
+
+.studeren img {
+	display: flex;
+	display: inline-block;
+	justify-content: start;
+	align-items: left;
+	width: 600px;
+	margin-left: 40px;
+}
+
+/* Footer */
+
+footer {
+	background-color: black;
+	color: #fff;
+	padding: 15px;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo1 {
+	display: flex;
+	align-items: center;
+}
+
+.logo1 img {
+	margin-left: 0px;
+	margin-right: 200px;
+	width: 400px;
+	height: auto;
+}
+
+.school-name span:first-child {
+	display: block;
+	font-weight: bold;
+}
+
+.footer-links a {
+	margin-right: 50px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 23pt;
+}
+
+.footer-links a:hover {
+	color: #bf2126;
+}
+
+.footer-icons img {
+	margin-right: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 50px;
+}
+
+.footer-icons1 img {
+	height: 50px;
+	margin-right: 0px;
+}
