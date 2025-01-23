@@ -170,6 +170,10 @@ li {
 	font-size: 13.5pt;
 }
 
+a:hover {
+	color: red;
+}
+
 .menu a:hover {
 	text-decoration: none;
 	color: #bf2126;
