@@ -93,6 +93,10 @@ a {
 	list-style: none;
 }
 
+a.active {
+	color: red;
+}
+
 /* Scrolling Banner Styles */
 .scrolling-banner {
 	/* margin-bottom: 100px; */
@@ -165,16 +169,15 @@ a {
 
 .header {
 	width: 100%;
-	margin-left: 70px;
 }
 
 /* Navigation Bar */
 
 .nav-bar {
+	margin-left: 70px;
 	justify-content: flex-start;
 	display: flex;
 	background-color: black;
-	padding-top: 0px;
 	text-decoration: none;
 }
 
@@ -203,6 +206,10 @@ a {
 	text-decoration: none;
 	z-index: 10;
 	font-size: 13.5pt;
+}
+
+.menu a.active {
+	color: red;
 }
 
 .menu a:hover {

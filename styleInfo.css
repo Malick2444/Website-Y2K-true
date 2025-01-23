@@ -130,12 +130,12 @@ li {
 
 .header {
 	width: 100%;
-	margin-left: 70px;
 }
 
 /* Navigation Bar */
 
 .nav-bar {
+	margin-left: 70px;
 	justify-content: flex-start;
 	display: flex;
 	background-color: black;
@@ -170,7 +170,15 @@ li {
 	font-size: 13.5pt;
 }
 
+.menu a.active {
+	color: red;
+}
+
 a:hover {
+	color: red;
+}
+
+a.active {
 	color: red;
 }
 
