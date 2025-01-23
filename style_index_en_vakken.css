@@ -79,7 +79,7 @@ h6 {
 
 p {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #bf2126;
+	color: white;
 	font-size: 20px;
 }
 
@@ -220,6 +220,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	gap: 20px;
 }
 
 .carousel-item.active {
@@ -248,7 +249,7 @@ body {
 	display: flex;
 	justify-content: center;
 	margin-right: 500px;
-	width: 80%;
+	width: 20%;
 	height: auto;
 	margin-top: -50px;
 }
@@ -260,12 +261,25 @@ body {
 	margin-left: 500px;
 }
 
+#carouselDescription {
+	font-family: "Arial", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 25pt; /* Approximately 33.33px */
+	color: white;
+	line-height: 1;
+	max-width: 100%;
+}
+
 #carouselTitle {
 	line-height: 1.5; /* Adjust line spacing */
-	font-size: 24px; /* Font size for readability */
+	/* Font size for readability */
 	text-align: left; /* Align text as needed */
 	margin-bottom: 20px;
-	font-size: 50px;
+	font-family: "Bodoni MT", serif;
+	font-style: italic;
+	font-weight: 900; /* Black weight */
+	font-size: 16pt; /* Approximately 21.33px */
 }
 
 .arrow {
@@ -282,13 +296,17 @@ body {
 }
 
 .left {
-	left: 30%; /* Move the left arrow closer to the image */
+	left: 40%; /* Move the left arrow closer to the image */
 }
 
 .right {
 	right: -10%; /* Move the right arrow closer to the image */
 }
 
+#carouselImage[data-index="0"] {
+	transform: translateY(-10px); /* Example adjustment for the second image */
+	transform: translateX(100px);
+}
 #carouselImage[data-index="1"] {
 	transform: translateY(-10px); /* Example adjustment for the second image */
 	transform: translateX(100px); /* Example horizontal adjustment */
@@ -325,6 +343,7 @@ body {
 	align-items: flex-start; /* Adjust vertical alignment */
 	justify-content: flex-start; /* Aligns items to the left initially */
 	margin-top: 50px;
+	margin-bottom: 150px;
 }
 .bigtext-right {
 	margin-left: 190px; /* Adjust the value to move it further to the right */
@@ -486,4 +505,27 @@ body {
 	display: block; /* Remove any inline gaps */
 	object-fit: cover; /* Ensure the video covers the area */
 	max-width: 100%; /* Prevent video from overflowing its container */
+}
+
+.carousel-button {
+	font-size: 16px;
+	padding: 15px 30px;
+	background-color: #bf2126; /* Red button background */
+	color: white; /* White text */
+	border: none;
+	border-radius: 5px;
+	font-weight: bold; /* Bold letters */
+	cursor: pointer;
+	text-align: center;
+	margin-top: 20px; /* Space between the text and the button */
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+}
+
+.carousel-button:hover {
+	background-color: darkred; /* Darker red on hover */
 }
