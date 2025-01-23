@@ -90,6 +90,9 @@ a {
 	color: #bf2126;
 	list-style: none;
 }
+a.active {
+	color: red;
+}
 
 * {
 	margin: 0;
@@ -159,6 +162,24 @@ body {
 	margin-left: 20px; /* Spacing for navigation text */
 }
 
+/* Add hover effect for header and footer links */
+.menu a:hover,
+.footer-links a:hover {
+	color: red; /* Change color on hover */
+}
+
+/* Add active class styles for the header and footer links */
+.menu a.active,
+.footer-links a.active {
+	color: red; /* Make the link red when it's active */
+}
+
+/* Optionally, you can also change the background color of the active link */
+.menu a.active,
+.footer-links a.active {
+	color: white;
+}
+
 /* Hero Section */
 .hero {
 	display: flex;
@@ -199,6 +220,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+
+.carousel-item.active {
+	color: red; /* Red color for active item */
+	font-weight: bold; /* Optional: makes the text bold */
 }
 
 .carousel-text {
@@ -263,6 +289,15 @@ body {
 	right: -10%; /* Move the right arrow closer to the image */
 }
 
+#carouselImage[data-index="1"] {
+	transform: translateY(-10px); /* Example adjustment for the second image */
+	transform: translateX(100px); /* Example horizontal adjustment */
+}
+#carouselImage[data-index="2"] {
+	transform: translateY(-20px); /* Move the image up by 20px */
+	transform: translateX(200px); /* Adjust horizontal alignment if necessary */
+}
+
 .other {
 	display: flex;
 	align-items: center;
@@ -289,9 +324,10 @@ body {
 	display: flex; /* Ensures the children are aligned in a row */
 	align-items: flex-start; /* Adjust vertical alignment */
 	justify-content: flex-start; /* Aligns items to the left initially */
+	margin-top: 50px;
 }
 .bigtext-right {
-	margin-left: 180px; /* Adjust the value to move it further to the right */
+	margin-left: 190px; /* Adjust the value to move it further to the right */
 	text-align: left; /* Ensure text alignment is consistent */
 }
 .bigtext-left {
@@ -379,6 +415,12 @@ body {
 /*vakken css begin*/
 
 /* Navigation Bar */
+
+/* Add active class styles for the header and footer links */
+.menu a.active,
+.footer-links a.active {
+	color: red; /* Make the link red when it's active */
+}
 
 .navigation ul {
 	margin: 0;

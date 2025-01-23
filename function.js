@@ -2,10 +2,32 @@
 document.addEventListener("DOMContentLoaded", () => {
 	// Set the first image, title, and description on load
 	const firstImage = images[0];
-	document.getElementById("carouselTitle").textContent = firstImage.title;
-	document.getElementById("carouselDescription").textContent =
-		firstImage.description;
-	document.getElementById("carouselImage").src = firstImage.src;
+	const imageElement = document.getElementById("carouselImage");
+	const titleElement = document.getElementById("carouselTitle");
+	const descriptionElement = document.getElementById("carouselDescription");
+
+	imageElement.src = firstImage.src;
+	imageElement.setAttribute("data-index", 0); // Set the initial index
+	titleElement.innerHTML = firstImage.title;
+	descriptionElement.innerHTML = firstImage.description;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+	images.forEach((imageData) => {
+		const img = new Image();
+		img.src = imageData.src; // Preload each image
+	});
+
+	// Set the first image, title, and description on load
+	const firstImage = images[0];
+	const imageElement = document.getElementById("carouselImage");
+	const titleElement = document.getElementById("carouselTitle");
+	const descriptionElement = document.getElementById("carouselDescription");
+
+	imageElement.src = firstImage.src;
+	imageElement.setAttribute("data-index", 0); // Set the initial index
+	titleElement.innerHTML = firstImage.title;
+	descriptionElement.innerHTML = firstImage.description;
 });
 
 let currentIndex = 0; // Keeps track of the current image index
@@ -19,7 +41,7 @@ const images = [
 	},
 	{
 		src: "images/senior_2.png",
-		title: "RAMON DE RAES 2MCT",
+		title: "RAMON DE&nbsp;RAES 2MCT",
 		description:
 			"Een boeiende en veelzijdige studierichting waarin je een brede waaier aan vakken verkent. Ideaal om je interesses te ontdekken en jezelf breed te ontwikkelen!",
 	},
@@ -48,11 +70,33 @@ function changeImage(direction) {
 	}
 
 	// Update image and text based on the current index
-	let image = document.getElementById("carouselImage");
-	let title = document.getElementById("carouselTitle");
-	let description = document.getElementById("carouselDescription");
+	const imageElement = document.getElementById("carouselImage");
+	const titleElement = document.getElementById("carouselTitle");
+	const descriptionElement = document.getElementById("carouselDescription");
 
-	image.src = images[currentIndex].src;
-	title.innerHTML = images[currentIndex].title; // Use innerHTML to render <br> tags in title
-	description.innerHTML = images[currentIndex].description; // Use innerHTML to render <br> tags in description
+	imageElement.src = images[currentIndex].src;
+	imageElement.setAttribute("data-index", currentIndex); // Set data-index
+	titleElement.innerHTML = images[currentIndex].title; // Use innerHTML for <br> support
+	descriptionElement.innerHTML = images[currentIndex].description; // Use innerHTML for <br> support
 }
+
+//menu red hover section
+// Function to handle active link highlighting
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+	// Get the current page URL
+	const currentPage = window.location.pathname.split("/").pop(); // Get the last part of the URL (e.g., 'index.html')
+
+	// Select all navigation links
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	// Loop through the links and add the 'active' class to the link that matches the current page
+	navLinks.forEach((link) => {
+		// Ensure we compare only the filename part
+		const linkPage = link.getAttribute("href").split("/").pop();
+
+		if (linkPage === currentPage) {
+			link.classList.add("active");
+		}
+	});
+});
