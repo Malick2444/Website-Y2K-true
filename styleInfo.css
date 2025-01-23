@@ -93,9 +93,7 @@ a {
 	list-style: none;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 15pt;
 }
-
 li {
 	font-family: Arial, Helvetica, sans-serif;
 	color: white;
@@ -104,7 +102,6 @@ li {
 
 /* Scrolling Banner Styles */
 .scrolling-banner {
-	margin-bottom: 100px;
 	background-color: #bf2126;
 	color: white;
 	width: 100%;
@@ -133,6 +130,7 @@ li {
 
 .header {
 	width: 100%;
+	margin-left: 70px;
 }
 
 /* Navigation Bar */
@@ -150,27 +148,26 @@ li {
 .logo img {
 	max-width: none;
 	max-height: none;
-	width: 350px;
+	width: 210px;
 	height: auto;
-	object-fit: cover;
-	padding-top: 100px;
-	margin-left: 100px;
+	padding-top: 87px;
+	margin-left: 107px;
 }
 
 /* Navigation Links */
 .menu {
 	display: flex;
-	gap: 190px;
-	margin-right: 100px;
-	margin-left: 200px;
+	gap: 150px;
+	margin-right: 0px;
+	margin-left: 403px;
 }
 
 .menu a {
-	margin-top: 130px;
+	margin-top: 110px;
 	color: white;
 	text-decoration: none;
-	font-size: 23pt;
 	z-index: 10;
+	font-size: 13.5pt;
 }
 
 .menu a:hover {

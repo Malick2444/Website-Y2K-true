@@ -95,7 +95,7 @@ a {
 
 /* Scrolling Banner Styles */
 .scrolling-banner {
-	margin-bottom: 100px;
+	/* margin-bottom: 100px; */
 	background-color: #bf2126;
 	color: white;
 	width: 100%;
@@ -121,9 +121,51 @@ a {
 		transform: translateX(-100%); /* Text moves completely out of the banner */
 	}
 }
+/*
+.header {
+	width: 100%;
+}
+
+
+
+.nav-bar {
+	justify-content: flex-start;
+	display: flex;
+	background-color: black;
+	padding-top: 0px;
+	text-decoration: none;
+}
+
+
+
+.logo img {
+	max-width: none;
+	max-height: none;
+	width: 350px;
+	height: auto;
+	object-fit: cover;
+	padding-top: 100px;
+	margin-left: 100px;
+}
+	.menu {
+	display: flex;
+	gap: 190px;
+	margin-right: 100px;
+	margin-left: 200px;
+}
+
+.menu a {
+	margin-top: 130px;
+	color: white;
+	text-decoration: none;
+	font-size: 23pt;
+	z-index: 10;
+}
+*/
 
 .header {
 	width: 100%;
+	margin-left: 70px;
 }
 
 /* Navigation Bar */
@@ -141,27 +183,26 @@ a {
 .logo img {
 	max-width: none;
 	max-height: none;
-	width: 350px;
+	width: 210px;
 	height: auto;
-	object-fit: cover;
-	padding-top: 100px;
-	margin-left: 100px;
+	padding-top: 87px;
+	margin-left: 107px;
 }
 
 /* Navigation Links */
 .menu {
 	display: flex;
-	gap: 190px;
-	margin-right: 100px;
-	margin-left: 200px;
+	gap: 150px;
+	margin-right: 0px;
+	margin-left: 403px;
 }
 
 .menu a {
-	margin-top: 130px;
+	margin-top: 110px;
 	color: white;
 	text-decoration: none;
-	font-size: 23pt;
 	z-index: 10;
+	font-size: 13.5pt;
 }
 
 .menu a:hover {
