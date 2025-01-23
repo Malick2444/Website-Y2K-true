@@ -189,21 +189,23 @@ li {
 	display: flex;
 	justify-content: start;
 	text-align: right;
-	margin-right: 100px;
+	margin-right: 20px;
 }
 .twinkleExtra p {
 	display: flex;
 	color: white;
 	text-align: right;
 	padding-top: 30px;
-	margin-left: 450px;
+	margin-left: 380px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
+	margin-right: 80px;
 }
 
 .twinkleExtra a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
+	margin-right: 80px;
 }
 
 .twinkleExtra h1 {
@@ -212,7 +214,7 @@ li {
 	text-align: right;
 	margin-left: 380px;
 	margin-top: 270px;
-	padding-left: 500px;
+	padding-left: 380px;
 	height: 40px;
 	width: 190px;
 }
@@ -223,6 +225,8 @@ li {
 	justify-content: start;
 	align-items: left;
 	width: 700px;
+	margin-left: 40px;
+	margin-top: 100px;
 }
 
 /* second image */
@@ -245,7 +249,7 @@ li {
 	color: white;
 	text-align: left;
 	padding-top: 30px;
-	padding-left: 100px;
+	padding-left: 180px;
 	padding-right: 350px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
@@ -255,7 +259,7 @@ li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 	display: flex;
-	padding-left: 100px;
+	padding-left: 180px;
 	padding-top: 10px;
 }
 .schoolExtra h1 {
@@ -263,8 +267,8 @@ li {
 	justify-content: left;
 	text-align: left;
 	margin-left: 0px;
-	margin-top: 200px;
-	padding-left: 100px;
+	margin-top: 170px;
+	padding-left: 180px;
 	height: 40px;
 }
 
@@ -274,7 +278,8 @@ li {
 	justify-content: start;
 	align-items: left;
 	width: 550px;
-	margin-left: 100px;
+	margin-left: 90px;
+	margin-right: 10px;
 }
 
 /* third image */
@@ -291,14 +296,14 @@ li {
 	display: flex;
 	justify-content: start;
 	text-align: right;
-	margin-right: 100px;
+	margin-right: 120px;
 }
 .studerenExtra p {
 	color: white;
 	text-align: right;
 	margin-left: 480px;
 	margin-bottom: 10px;
-	margin-top: 20px;
+	margin-top: 30px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
@@ -318,8 +323,8 @@ li {
 	justify-content: right;
 	text-align: right;
 	margin-left: 520px;
-	margin-top: 200px;
-	padding-left: 570px;
+	margin-top: 250px;
+	padding-left: 400px;
 	height: 40px;
 	width: 190px;
 }
@@ -330,7 +335,7 @@ li {
 	justify-content: start;
 	align-items: left;
 	width: 450px;
-	margin-left: 40px;
+	margin-left: 130px;
 	padding-bottom: 150px;
 	padding-top: 100px;
 }
@@ -348,7 +353,6 @@ li {
 	display: flex;
 	justify-content: start;
 	text-align: left;
-	margin-right: 100px;
 }
 .contact p {
 	display: flex;
@@ -356,14 +360,15 @@ li {
 	text-align: left;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 100px;
-	padding-right: 500px;
+	padding-left: 180px;
+	margin-right: 500px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
 
 .smol p {
 	padding-top: 0px;
+	padding-left: 180px;
 }
 
 .smol {
@@ -377,10 +382,10 @@ li {
 	text-align: left;
 	margin-left: 0px;
 	margin-top: 100px;
-	padding-left: 100px;
+	padding-left: 180px;
 	height: 40px;
 	width: 190px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .weirdStuff img {

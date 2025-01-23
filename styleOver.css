@@ -224,14 +224,14 @@ a {
 	display: flex;
 	justify-content: start;
 	text-align: right;
-	margin-right: 100px;
+	margin-right: 200px;
 }
 .twinkleExtra p {
 	display: flex;
 	color: white;
 	text-align: right;
 	padding-top: 30px;
-	margin-left: 450px;
+	margin-left: 250px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
@@ -241,7 +241,7 @@ a {
 	text-align: right;
 	margin-left: 380px;
 	margin-top: 200px;
-	padding-left: 600px;
+	padding-left: 420px;
 	height: 40px;
 	width: 190px;
 }
@@ -252,6 +252,7 @@ a {
 	justify-content: start;
 	align-items: left;
 	width: 600px;
+	margin-left: 100px;
 }
 
 /* second image */
@@ -274,7 +275,7 @@ a {
 	color: white;
 	text-align: left;
 	padding-top: 30px;
-	padding-left: 100px;
+	padding-left: 180px;
 	padding-right: 350px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
@@ -284,8 +285,8 @@ a {
 	justify-content: left;
 	text-align: left;
 	margin-left: 0px;
-	margin-top: 200px;
-	padding-left: 100px;
+	margin-top: 150px;
+	margin-left: 180px;
 	height: 40px;
 	width: 190px;
 }
@@ -296,7 +297,8 @@ a {
 	justify-content: start;
 	align-items: left;
 	width: 600px;
-	padding-left: 100px;
+	padding-left: 20px;
+	margin-right: 80px;
 }
 
 /* third image */
@@ -306,7 +308,6 @@ a {
 	justify-content: start;
 	text-align: right;
 	margin-right: 100px;
-	margin-top: 0px;
 }
 .studerenExtra {
 	flex-direction: column;
@@ -320,7 +321,7 @@ a {
 	color: white;
 	text-align: right;
 	padding-top: 30px;
-	margin-left: 480px;
+	margin-left: 400px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
@@ -330,7 +331,7 @@ a {
 	text-align: right;
 	margin-left: 520px;
 	margin-top: 200px;
-	padding-left: 600px;
+	padding-left: 440px;
 	height: 40px;
 	width: 190px;
 }
@@ -341,7 +342,8 @@ a {
 	justify-content: start;
 	align-items: left;
 	width: 600px;
-	margin-left: 40px;
+	margin-left: 120px;
+	margin-top: 65px;
 }
 
 /* Footer */
