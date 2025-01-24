@@ -174,8 +174,16 @@ li {
 	color: red;
 }
 
-a:hover {
-	color: red;
+.twinkleExtra a:hover {
+	background-color: #8b0000;
+}
+
+.schoolExtra a:hover {
+	background-color: #8b0000;
+}
+
+.studerenExtra a:hover {
+	background-color: #8b0000;
 }
 
 a.active {
@@ -196,6 +204,7 @@ a.active {
 	margin-right: 100px;
 	margin-top: 0px;
 }
+
 .twinkleExtra {
 	flex-direction: column;
 	display: flex;
@@ -203,6 +212,7 @@ a.active {
 	text-align: right;
 	margin-right: 20px;
 }
+
 .twinkleExtra p {
 	display: flex;
 	color: white;
@@ -215,18 +225,29 @@ a.active {
 }
 
 .twinkleExtra a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
+	font-family: "Bodoni MT", serif;
+	font-style: italic;
+	font-weight: 800;
+	font-size: 12pt;
 	margin-right: 80px;
+	display: inline;
+	align-self: flex-end;
+	color: white;
+	background-color: #bf2126;
+	border-radius: 5px;
+	padding: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
 }
 
 .twinkleExtra h1 {
 	display: flex;
 	justify-content: right;
 	text-align: right;
-	margin-left: 380px;
+	margin-left: 630px;
 	margin-top: 270px;
-	padding-left: 440px;
+	padding-left: 0px;
 	height: 40px;
 	width: 190px;
 }
@@ -271,18 +292,28 @@ a.active {
 }
 
 .schoolExtra a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
+	font-family: "Bodoni MT", serif;
+	font-style: italic;
+	font-weight: 800;
+	font-size: 12pt;
 	display: flex;
-	padding-left: 180px;
 	padding-top: 10px;
+	align-self: flex-start;
+	color: white;
+	background-color: #bf2126;
+	border-radius: 5px;
+	padding: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
+	margin-left: 180px;
 }
 .schoolExtra h1 {
 	display: flex;
 	justify-content: left;
 	text-align: left;
 	margin-left: 0px;
-	margin-top: 155px;
+	margin-top: 220px;
 	padding-left: 180px;
 	height: 40px;
 }
@@ -295,6 +326,7 @@ a.active {
 	width: 550px;
 	margin-left: 90px;
 	margin-right: 10px;
+	margin-top: 100px;
 }
 
 /* third image */
@@ -329,8 +361,19 @@ a.active {
 }
 
 .studerenExtra a {
-	font-size: 15pt;
+	font-family: "Bodoni MT", serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: 800;
 	margin-top: 30px;
+	align-self: flex-end;
+	color: white;
+	background-color: #bf2126;
+	border-radius: 5px;
+	padding: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
 }
 
 .studerenExtra h1 {
@@ -607,6 +650,7 @@ footer {
 		text-align: right;
 		margin-right: 100px;
 		margin-top: 0px;
+		height: 250px;
 	}
 	.twinkleExtra {
 		flex-direction: column;
@@ -618,45 +662,46 @@ footer {
 	.twinkleExtra p {
 		display: flex;
 		color: white;
-		text-align: right;
+		text-align: left;
 		padding-top: 30px;
-		margin-left: 380px;
+		margin-left: 0px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
-		margin-right: 80px;
+		margin-right: 100px;
 	}
 
 	.twinkleExtra a {
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
-		margin-right: 80px;
+		margin-right: 800px;
 	}
 
 	.twinkleExtra h1 {
 		display: flex;
-		justify-content: right;
-		text-align: right;
-		margin-left: 380px;
-		margin-top: 270px;
-		padding-left: 380px;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 450px;
+		padding-left: 0px;
 		height: 40px;
 		width: 190px;
 	}
 
 	.twinkle img {
 		display: flex;
-		display: inline-block;
 		justify-content: start;
 		align-items: left;
 		width: 400px;
-		height: 500px;
-		margin-left: 40px;
-		margin-top: 0px;
+		height: 300px;
+		margin-left: 0px;
+		margin-top: 40px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
 	}
 
 	/* second image */
 
 	.school {
+		margin-top: 10000px;
 		display: flex;
 		justify-content: start;
 		text-align: left;
@@ -692,7 +737,7 @@ footer {
 		justify-content: left;
 		text-align: left;
 		margin-left: 0px;
-		margin-top: 170px;
+		margin-top: 700px;
 		padding-left: 180px;
 		height: 40px;
 	}

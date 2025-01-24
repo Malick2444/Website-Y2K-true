@@ -242,6 +242,7 @@ a.active {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15pt;
 }
+
 .twinkleExtra h1 {
 	display: flex;
 	justify-content: right;
@@ -258,8 +259,9 @@ a.active {
 	display: inline-block;
 	justify-content: start;
 	align-items: left;
-	width: 600px;
+	width: 500px;
 	margin-left: 140px;
+	margin-right: 100px;
 }
 
 /* second image */
@@ -294,12 +296,10 @@ a.active {
 	margin-left: 0px;
 	margin-top: 150px;
 	margin-left: 180px;
-	height: 40px;
-	width: 190px;
+	margin-bottom: 15px;
 }
 
 .school img {
-	display: flex;
 	display: inline-block;
 	justify-content: start;
 	align-items: left;
@@ -578,6 +578,7 @@ footer {
 		width: 250px;
 		height: 250px;
 		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	/* second image */
@@ -612,6 +613,7 @@ footer {
 		margin-left: 0px;
 		margin-top: 90px;
 		margin-left: 20px;
+		margin-right: 90px;
 	}
 
 	.school img {
