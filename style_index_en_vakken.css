@@ -403,7 +403,8 @@ body {
 }
 
 .logo1 img {
-	height: 50px;
+	height: 100px;
+	width: auto;
 	margin-right: 50px;
 	margin-left: 140px;
 }
@@ -412,38 +413,79 @@ body {
 	display: block;
 	font-weight: normal;
 }
-.footer {
-	background-color: black;
+/* Footer */
+/* Footer */
+
+/* Footer */
+footer {
+	background-color: #c8102e;
 	color: white;
+	padding: 30px 0;
 	display: flex;
-	flex-wrap: wrap; /* Enable wrapping for smaller screens */
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-	gap: 20px; /* Adds space between items */
-	text-align: center;
+	flex-direction: row;
+	justify-content: space-between; /* Ensures equal spacing between items */
+	align-items: flex-start; /* Aligns items to the top */
+	text-align: left;
+	flex-wrap: nowrap; /*Prevents wrapping of items */
 }
 
-.footer-links a {
-	margin-right: 100px;
+footer h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+
+footer p,
+footer a {
+	color: white;
 	text-decoration: none;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 300;
+	font-size: 0.9rem;
+	margin: 5px 0;
 }
 
-.footer-links a:hover {
-	color: #bf2126;
+footer a:hover {
+	text-decoration: none;
 }
 
-.footer-icons img {
-	margin: 50px;
-	height: 50px;
+.logo1 {
+	height: 100px;
+	width: auto;
+	margin-left: -30px;
+	margin-top: 20px;
 }
 
-.footer-icons1 img {
-	height: 50px;
+.contact-footer {
+	margin-left: 600px;
+	margin-top: -100px;
+}
+.contact-footer h3,
+p {
+	text-align: left;
+}
+
+.social-icons {
+	text-align: center;
+	margin-left: 1000px;
+	margin-top: -100px;
+}
+
+.social-icons img {
+	height: 30px;
+}
+
+.social-icons a {
+	padding: 10px;
+}
+
+.navigatie {
 	margin-right: 150px;
+	margin-top: 20px;
+}
+.navigatie a {
+	display: block;
+	margin-bottom: 5px;
 }
 
 #carouselImage[data-index="0"] {
@@ -727,7 +769,7 @@ body {
 		margin-bottom: 10px; /* Add some spacing below the logo */
 	}
 
-	.footer .footer-links {
+	.footer-links {
 		display: flex;
 		flex-direction: row; /* Ensure links are in a row */
 		justify-content: center;
@@ -867,8 +909,8 @@ body {
 	.logo img {
 		max-width: none;
 		max-height: none;
-		width: 150px;
-		height: auto;
+		height: 100px;
+		width: auto;
 		padding-top: 60px;
 		margin-left: -100px;
 	}
