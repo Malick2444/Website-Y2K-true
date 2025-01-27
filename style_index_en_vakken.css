@@ -324,11 +324,12 @@ body {
 }
 #carouselImage[data-index="1"] {
 	transform: translateY(-10px); /* Example adjustment for the second image */
-	transform: translateX(100px); /* Example horizontal adjustment */
+	transform: translateX(120px); /* Example horizontal adjustment */
+	transform: scale(1);
 }
 #carouselImage[data-index="2"] {
-	transform: translateY(-20px); /* Move the image up by 20px */
-	transform: translateX(200px); /* Adjust horizontal alignment if necessary */
+	/* Adjust horizontal alignment if necessary */
+	transform: translateY(-70px) translateX(200px) scale(0.6);
 }
 
 .other {
@@ -443,6 +444,25 @@ body {
 .footer-icons1 img {
 	height: 50px;
 	margin-right: 150px;
+}
+
+#carouselImage[data-index="0"] {
+	transform: translateY(-10px); /* Example adjustment for the second image */
+	transform: translateX(100px);
+}
+
+#carouselImage[data-index="1"] {
+	transform: translateY(-10px) translateX(120px) scale(1.2); /* Example adjustment for the second image */
+}
+
+#carouselImage[data-index="2"] {
+	/* Adjust horizontal alignment if necessary */
+	transform: translateY(50px) translateX(250px) scale(0.8);
+}
+
+#carouselImage[data-index="3"] {
+	/* Adjust horizontal alignment if necessary */
+	transform: translateY(50px) translateX(200px) scale(0.8);
 }
 
 /*index css einde*/
@@ -630,6 +650,20 @@ body {
 		margin-top: -90px;
 	}
 
+	#carouselImage[data-index="1"] {
+		transform: translateY(-10px) translateX(120px) scale(1.2); /* Example adjustment for the second image */
+	}
+
+	#carouselImage[data-index="2"] {
+		/* Adjust horizontal alignment if necessary */
+		transform: translateY(50px) translateX(250px) scale(0.8);
+	}
+
+	#carouselImage[data-index="3"] {
+		/* Adjust horizontal alignment if necessary */
+		transform: translateY(50px) translateX(200px) scale(0.8);
+	}
+
 	.carousel-image img {
 		width: 90%;
 		display: block;
@@ -640,22 +674,6 @@ body {
 		text-align: center;
 		padding: 10px; /* Add padding for readability */
 	}
-
-	.carousel-item:nth-child(1) .carousel-image img {
-        /* Styles specific to first image */
-        margin-right: 300px; /* Example adjustment */
-    }
-
-    .carousel-item:nth-child(2) .carousel-image img {
-        /* Styles specific to second image */
-        margin-top: 20px;
-    }
-
-    .carousel-item:nth-child(3) .carousel-image img {
-        /* Styles specific to third image */
-        margin-top: 30px;
-    }
-
 
 	.arrow {
 		font-size: 24px; /* Reduce size of arrows */
@@ -702,13 +720,13 @@ body {
 		margin-bottom: 0;
 		overflow: hidden;
 	}
-	
+
 	.footer .logo1 img {
 		width: 80px;
 		height: auto;
 		margin-bottom: 10px; /* Add some spacing below the logo */
 	}
-	
+
 	.footer .footer-links {
 		display: flex;
 		flex-direction: row; /* Ensure links are in a row */
@@ -717,13 +735,13 @@ body {
 		gap: 20px; /* Space between links */
 		margin-bottom: 10px; /* Reduced margin to keep it compact */
 	}
-	
+
 	.footer .footer-links a {
 		font-size: 18px;
 		color: white;
 		margin-right: 10px; /* Space between links */
 	}
-	
+
 	.footer-icons {
 		display: flex; /* Ensure icons are in a row */
 		flex-direction: row; /* Align icons horizontally */
@@ -732,16 +750,13 @@ body {
 		align-items: center; /* Align the icons to the center vertically */
 		margin-top: 10px; /* Adjust space between links and icons */
 	}
-	
+
 	.footer img {
 		width: 40px; /* Set the width of the icons */
 		height: 40px; /* Set the height of the icons */
 		margin: 0 10px; /* Margin between icons */
 	}
-	
-	
-	
-	
+}
 
 /* Additional adjustments for very small screens */
 @media (max-width: 480px) {
@@ -813,6 +828,20 @@ body {
 	.carousel-item:nth-child(4) .carousel-image img {
 		margin-left: 15px; /* Shift to the right */
 		transform: scale(0.9); /* Optional: Slightly reduce size */
+	}
+
+	#carouselImage[data-index="1"] {
+		transform: translateY(-10px) translateX(80px) scale(1.2); /* Example adjustment for the second image */
+	}
+
+	#carouselImage[data-index="2"] {
+		/* Adjust horizontal alignment if necessary */
+		transform: translateY(50px) translateX(100px) scale(0.8);
+	}
+
+	#carouselImage[data-index="3"] {
+		/* Adjust horizontal alignment if necessary */
+		transform: translateY(50px) translateX(100px) scale(0.8);
 	}
 
 	/* Navigation Bar */
