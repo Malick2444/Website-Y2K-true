@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
+	// Get the current page, default to index.html if on homepage
+	const currentPath = window.location.pathname;
+	console.log("Current Path:", currentPath); // Log the full pathname
+
+	const currentPage = currentPath.split("/").pop() || "index.html";
+	console.log("Current Page:", currentPage); // Log currentPage value
+
+	// Select all nav links
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	navLinks.forEach((link) => {
+		const linkPage = link.getAttribute("href").split("/").pop();
+		console.log(`Comparing: ${linkPage} with ${currentPage}`); // Log comparison
+		if (linkPage === currentPage) {
+			console.log(`Match found: ${linkPage}`); // Log match
+			link.classList.add("active"); // Add active class if matched
+		} else {
+			link.classList.remove("active"); // Remove active class if not matched
+		}
+	});
+
+	// Carousel code (unchanged)
 	const images = [
 		{
 			src: "images/senior_1.png",
@@ -34,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		img.src = imageData.src;
 	});
 
-	// DOM Elements
+	// DOM Elements for carousel
 	const imageElement = document.getElementById("carouselImage");
 	const titleElement = document.getElementById("carouselTitle");
 	const descriptionElement = document.getElementById("carouselDescription");
@@ -56,15 +78,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		currentIndex = (currentIndex + direction + images.length) % images.length; // Wrap around
 		updateCarousel(currentIndex);
 	};
-
-	// Highlight active link in the navbar
-	const currentPage = window.location.pathname.split("/").pop();
-	const navLinks = document.querySelectorAll(".nav-link");
-
-	navLinks.forEach((link) => {
-		const linkPage = link.getAttribute("href").split("/").pop();
-		if (linkPage === currentPage) {
-			link.classList.add("active");
-		}
-	});
 });
+function updateCarousel(index) {
+	// Remove the 'active' class from all items
+	document
+		.querySelectorAll(".carousel-item")
+		.forEach((item) => item.classList.remove("active"));
+
+	// Add the 'active' class to the current image
+	const currentImage = document.querySelectorAll(".carousel-item")[index];
+	currentImage.classList.add("active");
+
+	// Update the carousel content (image, title, and description)
+	const imageElement = document.getElementById("carouselImage");
+	const titleElement = document.getElementById("carouselTitle");
+	const descriptionElement = document.getElementById("carouselDescription");
+
+	imageElement.src = currentImage.querySelector("img").src;
+	titleElement.innerHTML =
+		currentImage.querySelector(".carousel-title").innerText;
+	descriptionElement.innerHTML = currentImage.querySelector(
+		".carousel-description"
+	).innerText;
+}
