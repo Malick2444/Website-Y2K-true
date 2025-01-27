@@ -354,57 +354,74 @@ a.active {
 }
 
 /* Footer */
-
 footer {
-	background-color: #bf2126;
-	color: #fff;
-	padding: 15px;
+	background-color: #c8102e;
+	color: white;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* Ensures equal spacing between items */
+	align-items: flex-start; /* Aligns items to the top */
+	text-align: left;
+	flex-wrap: nowrap; /*Prevents wrapping of items */
 }
 
-.footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+footer h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: white;
+}
+
+footer p,
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin: 5px 0;
+}
+
+footer a:hover {
+	text-decoration: none;
 }
 
 .logo1 {
-	display: flex;
-	align-items: center;
+	height: 100px;
+	margin-left: 100px;
+	margin-top: 20px;
 }
 
-.logo1 img {
-	margin-left: 0px;
-	margin-right: 200px;
-	width: 400px;
-	height: auto;
+.contact-footer {
+	margin-left: 700px;
+	margin-top: -100px;
+}
+.contact-footer h3,
+p {
+	text-align: left;
 }
 
-.school-name span:first-child {
+.social-icons {
+	text-align: center;
+	margin-left: 1120px;
+	margin-top: -100px;
+}
+
+.social-icons img {
+	height: 30px;
+}
+
+.social-icons a {
+	padding: 10px;
+}
+
+.navigatie {
+	margin-right: 150px;
+	margin-top: 20px;
+}
+.navigatie a {
 	display: block;
-	font-weight: bold;
-}
-
-.footer-links a {
-	margin-right: 50px;
-	text-decoration: none;
-	color: #fff;
-	font-size: 23pt;
-}
-
-.footer-links a:hover {
-	color: #bf2126;
-}
-
-.footer-icons img {
-	margin-right: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	height: 50px;
-}
-
-.footer-icons1 img {
-	height: 50px;
-	margin-right: 0px;
+	margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
