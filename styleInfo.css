@@ -1,513 +1,7 @@
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* Normalize */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	background-color: black;
-	font-family: "Inter", sans-serif;
-	color: white;
-}
-
-h1 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 48px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h2 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 40px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h3 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 32px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h4 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 24px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h5 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 16px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-h6 {
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 8px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-}
-
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #bf2126;
-}
-
-a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 100;
-	text-decoration: none;
-	color: #bf2126;
-	list-style: none;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-li {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	font-size: 15pt;
-}
-
-/* Scrolling Banner Styles */
-.scrolling-banner {
-	background-color: #bf2126;
-	color: white;
-	width: 100%;
-	overflow: hidden;
-	white-space: nowrap; /* Prevent text wrapping */
-	padding: 15px 0;
-	box-sizing: border-box;
-	z-index: 1000; /* Make sure it appears above other content */
-}
-
-.scrolling-text {
-	display: inline-block; /* Allow text to scroll smoothly */
-	animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
-	padding-left: 100%; /* Start the text off-screen */
-}
-
-/* Keyframes for Scrolling Animation */
-@keyframes scroll-left {
-	from {
-		transform: translateX(0); /* Text starts in the visible area */
-	}
-	to {
-		transform: translateX(-100%); /* Text moves completely out of the banner */
-	}
-}
-
-.header {
-	width: 100%;
-}
-
-/* Navigation Bar */
-
-.nav-bar {
-	margin-left: 4.15%;
-	justify-content: flex-start;
-	display: flex;
-	background-color: black;
-	padding-top: 0px;
-	text-decoration: none;
-}
-
-/* Logo */
-
-.logo img {
-	max-width: none;
-	max-height: none;
-	width: 210px;
-	height: auto;
-	padding-top: 87px;
-	margin-left: 107px;
-}
-
-/* Navigation Links */
-.menu {
-	display: flex;
-	gap: 150px;
-	margin-right: 0px;
-	margin-left: 403px;
-}
-
-.menu a {
-	margin-top: 110px;
-	color: white;
-	text-decoration: none;
-	z-index: 10;
-	font-size: 13.5pt;
-}
-
-.menu a.active {
-	color: red;
-}
-
-.twinkleExtra a:hover {
-	background-color: #8b0000;
-}
-
-.schoolExtra a:hover {
-	background-color: #8b0000;
-}
-
-.studerenExtra a:hover {
-	background-color: #8b0000;
-}
-
-a.active {
-	color: red;
-}
-
-.menu a:hover {
-	text-decoration: none;
-	color: #bf2126;
-}
-
-/* First Image */
-
-.twinkle {
-	display: flex;
-	justify-content: start;
-	text-align: right;
-	margin-right: 100px;
-	margin-top: 0px;
-}
-
-.twinkleExtra {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: right;
-	margin-right: 20px;
-}
-
-.twinkleExtra p {
-	display: flex;
-	color: white;
-	text-align: right;
-	padding-top: 30px;
-	margin-left: 380px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
-	margin-right: 80px;
-}
-
-.twinkleExtra a {
-	font-family: "Bodoni MT", serif;
-	font-style: italic;
-	font-weight: 800;
-	font-size: 12pt;
-	margin-right: 80px;
-	display: inline;
-	align-self: flex-end;
-	color: white;
-	background-color: #bf2126;
-	border-radius: 5px;
-	padding: 18px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 20px;
-}
-
-.twinkleExtra h1 {
-	display: flex;
-	justify-content: right;
-	text-align: right;
-	margin-left: 630px;
-	margin-top: 270px;
-	padding-left: 0px;
-	height: 40px;
-	width: 190px;
-}
-
-.twinkle img {
-	display: flex;
-	display: inline-block;
-	justify-content: start;
-	align-items: left;
-	width: 550px;
-	height: 400px;
-	margin-left: 50px;
-	margin-top: 280px;
-	margin-right: 80px;
-	margin-bottom: 150px;
-}
-
-/* second image */
-
-.school {
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 100px;
-}
-.schoolExtra {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 100px;
-}
-.schoolExtra p {
-	display: flex;
-	color: white;
-	text-align: left;
-	padding-top: 30px;
-	padding-left: 180px;
-	padding-right: 350px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
-}
-
-.schoolExtra a {
-	font-family: "Bodoni MT", serif;
-	font-style: italic;
-	font-weight: 800;
-	font-size: 12pt;
-	display: flex;
-	padding-top: 10px;
-	align-self: flex-start;
-	color: white;
-	background-color: #bf2126;
-	border-radius: 5px;
-	padding: 18px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 20px;
-	margin-left: 180px;
-}
-.schoolExtra h1 {
-	display: flex;
-	justify-content: left;
-	text-align: left;
-	margin-left: 0px;
-	margin-top: 220px;
-	padding-left: 180px;
-	height: 40px;
-}
-
-.school img {
-	display: flex;
-	display: inline-block;
-	justify-content: start;
-	align-items: left;
-	width: 550px;
-	margin-left: 90px;
-	margin-right: 10px;
-	margin-top: 100px;
-}
-
-/* third image */
-
-.studeren {
-	display: flex;
-	justify-content: start;
-	text-align: right;
-	margin-right: 100px;
-	margin-top: 0px;
-}
-.studerenExtra {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: right;
-	margin-right: 120px;
-}
-.studerenExtra p {
-	color: white;
-	text-align: right;
-	margin-left: 480px;
-	margin-bottom: 10px;
-	margin-top: 30px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
-}
-
-.studerenExtra li {
-	text-align: right;
-	margin-bottom: 5px;
-}
-
-.studerenExtra a {
-	font-family: "Bodoni MT", serif;
-	font-size: 12pt;
-	font-style: italic;
-	font-weight: 800;
-	margin-top: 30px;
-	align-self: flex-end;
-	color: white;
-	background-color: #bf2126;
-	border-radius: 5px;
-	padding: 18px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 20px;
-}
-
-.studerenExtra h1 {
-	display: flex;
-	justify-content: right;
-	text-align: right;
-	margin-left: 520px;
-	margin-top: 235px;
-	padding-left: 400px;
-	height: 40px;
-	width: 190px;
-}
-
-.studeren img {
-	display: flex;
-	display: inline-block;
-	justify-content: start;
-	align-items: left;
-	width: 450px;
-	margin-left: 130px;
-	padding-bottom: 150px;
-	padding-top: 100px;
-}
-
-/* Fourth Image */
-
-.weirdStuff {
-	display: flex;
-	justify-content: start;
-	text-align: left;
-	margin-right: 100px;
-}
-.contact {
-	flex-direction: column;
-	display: flex;
-	justify-content: start;
-	text-align: left;
-}
-.contact p {
-	display: flex;
-	color: white;
-	text-align: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 180px;
-	margin-right: 500px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
-}
-
-.smol p {
-	padding-top: 0px;
-	padding-left: 180px;
-}
-
-.smol {
-	margin-bottom: 20px;
-	padding-top: 20px;
-}
-
-.contact h1 {
-	display: flex;
-	justify-content: left;
-	text-align: left;
-	margin-left: 0px;
-	margin-top: 100px;
-	padding-left: 180px;
-	height: 40px;
-	width: 190px;
-	margin-bottom: 20px;
-}
-
-.weirdStuff img {
-	width: 700px;
-	margin-left: 0px;
-	margin-bottom: 100px;
-	margin-top: 150px;
-}
-
-/* Footer */
-
-footer {
-	background-color: #bf2126;
-	color: #fff;
-	padding: 15px;
-}
-
-.footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.logo1 {
-	display: flex;
-	align-items: center;
-}
-
-.logo1 img {
-	margin-left: 0px;
-	margin-right: 200px;
-	width: 400px;
-	height: auto;
-}
-
-.school-name span:first-child {
-	display: block;
-	font-weight: bold;
-}
-
-.footer-links a {
-	margin-right: 50px;
-	text-decoration: none;
-	color: #fff;
-	font-size: 23pt;
-}
-
-.footer-links a:hover {
-	color: #bf2126;
-}
-
-.footer-icons img {
-	margin-right: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	height: 50px;
-}
-
-.footer-icons1 img {
-	height: 50px;
-	margin-right: 0px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
 	/* Normalize */
 	* {
 		margin: 0;
@@ -524,7 +18,7 @@ footer {
 	h1 {
 		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 			"Times New Roman", serif;
-		font-size: 24px;
+		font-size: 48px;
 		font-style: italic;
 		font-variant: normal;
 		font-weight: 800;
@@ -590,7 +84,6 @@ footer {
 	p {
 		font-family: Arial, Helvetica, sans-serif;
 		color: #bf2126;
-		font-size: 10pt;
 	}
 
 	a {
@@ -599,7 +92,43 @@ footer {
 		text-decoration: none;
 		color: #bf2126;
 		list-style: none;
-		font-size: 12pt;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	li {
+		font-family: Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 15pt;
+	}
+
+	/* Scrolling Banner Styles */
+	.scrolling-banner {
+		background-color: #bf2126;
+		color: white;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap; /* Prevent text wrapping */
+		padding: 15px 0;
+		box-sizing: border-box;
+		z-index: 1000; /* Make sure it appears above other content */
+	}
+
+	.scrolling-text {
+		display: inline-block; /* Allow text to scroll smoothly */
+		animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+		padding-left: 100%; /* Start the text off-screen */
+	}
+
+	/* Keyframes for Scrolling Animation */
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0); /* Text starts in the visible area */
+		}
+		to {
+			transform: translateX(
+				-100%
+			); /* Text moves completely out of the banner */
+		}
 	}
 
 	.header {
@@ -609,10 +138,11 @@ footer {
 	/* Navigation Bar */
 
 	.nav-bar {
-		margin-left: 0px;
+		margin-left: 4.15%;
 		justify-content: flex-start;
 		display: flex;
 		background-color: black;
+		padding-top: 0px;
 		text-decoration: none;
 	}
 
@@ -621,27 +151,53 @@ footer {
 	.logo img {
 		max-width: none;
 		max-height: none;
-		width: 150px;
+		width: 210px;
 		height: auto;
-		padding-top: 50px;
-		margin-left: 20px;
+		padding-top: 87px;
+		margin-left: 107px;
 	}
 
 	/* Navigation Links */
 	.menu {
 		display: flex;
-		gap: 20px;
+		gap: 150px;
 		margin-right: 0px;
-		margin-left: 20px;
+		margin-left: 403px;
 	}
 
 	.menu a {
-		margin-top: 63px;
+		margin-top: 110px;
 		color: white;
 		text-decoration: none;
 		z-index: 10;
-		font-size: 12pt;
+		font-size: 13.5pt;
 	}
+
+	.menu a.active {
+		color: red;
+	}
+
+	.twinkleExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	.schoolExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	.studerenExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	a.active {
+		color: red;
+	}
+
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
+	}
+
 	/* First Image */
 
 	.twinkle {
@@ -650,8 +206,8 @@ footer {
 		text-align: right;
 		margin-right: 100px;
 		margin-top: 0px;
-		height: 250px;
 	}
+
 	.twinkleExtra {
 		flex-direction: column;
 		display: flex;
@@ -659,28 +215,41 @@ footer {
 		text-align: right;
 		margin-right: 20px;
 	}
+
 	.twinkleExtra p {
 		display: flex;
 		color: white;
-		text-align: left;
+		text-align: right;
 		padding-top: 30px;
-		margin-left: 0px;
+		margin-left: 380px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
-		margin-right: 100px;
+		margin-right: 80px;
 	}
 
 	.twinkleExtra a {
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 15pt;
-		margin-right: 800px;
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
+		margin-right: 80px;
+		display: inline;
+		align-self: flex-end;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
 	}
 
 	.twinkleExtra h1 {
 		display: flex;
-		text-align: left;
-		margin-left: 0px;
-		margin-top: 450px;
+		justify-content: right;
+		text-align: right;
+		margin-left: 630px;
+		margin-top: 270px;
 		padding-left: 0px;
 		height: 40px;
 		width: 190px;
@@ -688,20 +257,20 @@ footer {
 
 	.twinkle img {
 		display: flex;
+		display: inline-block;
 		justify-content: start;
 		align-items: left;
-		width: 400px;
-		height: 300px;
-		margin-left: 0px;
-		margin-top: 40px;
-		margin-bottom: 0px;
-		padding-bottom: 0px;
+		width: 550px;
+		height: 400px;
+		margin-left: 130px;
+		margin-top: 280px;
+		margin-right: 0px;
+		margin-bottom: 300px;
 	}
 
 	/* second image */
 
 	.school {
-		margin-top: 10000px;
 		display: flex;
 		justify-content: start;
 		text-align: left;
@@ -716,6 +285,8 @@ footer {
 	}
 	.schoolExtra p {
 		display: flex;
+		align-self: left;
+		align-items: left;
 		color: white;
 		text-align: left;
 		padding-top: 30px;
@@ -723,33 +294,50 @@ footer {
 		padding-right: 350px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
+		margin-right: 500px;
 	}
 
-	.schoolExtra a {
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 15pt;
+	.button a {
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
 		display: flex;
-		padding-left: 180px;
 		padding-top: 10px;
+		align-self: flex-start;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+		margin-left: 180px;
 	}
 	.schoolExtra h1 {
 		display: flex;
 		justify-content: left;
 		text-align: left;
 		margin-left: 0px;
-		margin-top: 700px;
+		margin-top: 220px;
 		padding-left: 180px;
 		height: 40px;
+		margin-bottom: 10px;
 	}
 
-	.school img {
-		display: flex;
-		display: inline-block;
-		justify-content: start;
-		align-items: left;
-		width: 550px;
-		margin-left: 90px;
-		margin-right: 10px;
+	#map {
+		position: relative;
+		top: -230px;
+		background-color: transparent;
+		width: 700px;
+		height: 400px;
+		margin-left: 800px;
+		margin-right: 200px;
+		flex-shrink: 0;
+	}
+
+	#map a:hover {
+		background-color: transparent;
 	}
 
 	/* third image */
@@ -759,7 +347,7 @@ footer {
 		justify-content: start;
 		text-align: right;
 		margin-right: 100px;
-		margin-top: 0px;
+		margin-top: 200px;
 	}
 	.studerenExtra {
 		flex-direction: column;
@@ -784,8 +372,19 @@ footer {
 	}
 
 	.studerenExtra a {
-		font-size: 15pt;
+		font-family: "Bodoni MT", serif;
+		font-size: 12pt;
+		font-style: italic;
+		font-weight: 800;
 		margin-top: 30px;
+		align-self: flex-end;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
 	}
 
 	.studerenExtra h1 {
@@ -793,7 +392,7 @@ footer {
 		justify-content: right;
 		text-align: right;
 		margin-left: 520px;
-		margin-top: 250px;
+		margin-top: 235px;
 		padding-left: 400px;
 		height: 40px;
 		width: 190px;
@@ -866,56 +465,551 @@ footer {
 	}
 
 	/* Footer */
-
 	footer {
-		background-color: #bf2126;
-		color: #fff;
-		padding: 15px;
+		background-color: #c8102e;
+		color: white;
+		padding: 30px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between; /* Ensures equal spacing between items */
+		align-items: flex-start; /* Aligns items to the top */
+		text-align: left;
+		flex-wrap: nowrap; /*Prevents wrapping of items */
 	}
 
-	.footer {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	footer h3 {
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	footer p,
+	footer a {
+		color: white;
+		text-decoration: none;
+		font-size: 0.9rem;
+		margin: 5px 0;
+	}
+
+	footer a:hover {
+		text-decoration: none;
 	}
 
 	.logo1 {
-		display: flex;
-		align-items: center;
+		height: 100px;
+		margin-left: 100px;
+		margin-top: 20px;
 	}
 
-	.logo1 img {
-		margin-left: 0px;
-		margin-right: 200px;
-		width: 400px;
-		height: auto;
+	.contact-footer {
+		margin-left: 700px;
+		margin-top: -100px;
+	}
+	.contact-footer h3,
+	p {
+		text-align: left;
 	}
 
-	.school-name span:first-child {
+	.social-icons {
+		text-align: center;
+		margin-left: 1120px;
+		margin-top: -100px;
+	}
+
+	.social-icons img {
+		height: 30px;
+	}
+
+	.social-icons a {
+		padding: 10px;
+	}
+
+	.navigatie {
+		margin-right: 150px;
+		margin-top: 20px;
+	}
+	.navigatie a {
 		display: block;
-		font-weight: bold;
+		margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	/* Normalize */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 	}
 
-	.footer-links a {
-		margin-right: 50px;
-		text-decoration: none;
-		color: #fff;
-		font-size: 23pt;
+	body {
+		background-color: black;
+		font-family: "Inter", sans-serif;
+		color: white;
 	}
 
-	.footer-links a:hover {
+	h2 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 40px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
 		color: #bf2126;
 	}
 
-	.footer-icons img {
-		margin-right: 50px;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		height: 50px;
+	h3 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 32px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
 	}
 
-	.footer-icons1 img {
-		height: 50px;
+	h4 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h5 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 16px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h6 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 8px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	h1 {
+		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-size: 24px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: 800;
+		line-height: 26.4px;
+		color: #bf2126;
+	}
+
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+		color: #bf2126;
+		font-size: 10pt;
+	}
+
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 100;
+		text-decoration: none;
+		color: #bf2126;
+		list-style: none;
+	}
+	a.active {
+		color: red;
+	}
+
+	/* Scrolling Banner Styles */
+	.scrolling-banner {
+		/* margin-bottom: 100px; */
+		background-color: #bf2126;
+		color: white;
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap; /* Prevent text wrapping */
+		padding: 15px 0;
+		box-sizing: border-box;
+		z-index: 1000; /* Make sure it appears above other content */
+	}
+
+	.scrolling-text {
+		display: inline-block; /* Allow text to scroll smoothly */
+		animation: scroll-left 10s linear infinite; /* Infinite horizontal scroll */
+		padding-left: 100%; /* Start the text off-screen */
+	}
+
+	/* Keyframes for Scrolling Animation */
+	@keyframes scroll-left {
+		from {
+			transform: translateX(0); /* Text starts in the visible area */
+		}
+		to {
+			transform: translateX(
+				-100%
+			); /* Text moves completely out of the banner */
+		}
+	}
+	/* Navigation Bar */
+
+	.nav-bar {
+		margin-bottom: 30px;
+		margin-left: 0px;
+		justify-content: flex-start;
+		display: flex;
+		background-color: black;
+		text-decoration: none;
+	}
+	.menu a {
+		margin-top: 63px;
+		color: white;
+		text-decoration: none;
+		z-index: 10;
+		font-size: 12pt;
+	}
+
+	/* Logo */
+
+	.logo img {
+		max-width: none;
+		max-height: none;
+		width: 150px;
+		height: auto;
+		padding-top: 50px;
+		margin-left: 20px;
+	}
+
+	/* Navigation Links */
+	.menu {
+		display: flex;
+		gap: 20px;
 		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	/* First Image */
+
+	.twinkle {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+
+	.twinkleExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: center;
+	}
+
+	.twinkleExtra p {
+		display: flex;
+		text-align: center;
+		color: white;
+		padding-top: 30px;
+		margin-left: 20px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+		margin-right: 40px;
+	}
+
+	.twinkleExtra a {
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
+		margin-right: 10px;
+		display: inline;
+		align-self: center;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+	}
+
+	.twinkleExtra h1 {
+		display: flex;
+		justify-content: right;
+		text-align: right;
+		margin-left: 100px;
+		margin-top: 70px;
+		padding-left: 0px;
+		height: 40px;
+		width: 190px;
+	}
+
+	.twinkle img {
+		width: 400px;
+		height: auto;
+		margin-top: 50px;
+		padding-right: 30px;
+		margin-left: 10px;
+	}
+
+	/* second image */
+
+	.school {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		text-align: center;
+	}
+	.schoolExtra {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		text-align: left;
+	}
+	.schoolExtra p {
+		display: flex;
+		color: white;
+		text-align: center;
+		padding-top: 30px;
+		margin-left: 40px;
+		margin-right: 50px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+
+	.schoolExtra a {
+		font-family: "Bodoni MT", serif;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 12pt;
+		display: flex;
+		padding-top: 10px;
+		align-self: flex-start;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		margin-top: 20px;
+		margin-left: 120px;
+	}
+	.schoolExtra h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 150px;
+		padding-left: 160px;
+		height: 40px;
+	}
+
+	.school img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 400px;
+		margin-left: 10px;
+		margin-top: 100px;
+	}
+
+	/* third image */
+
+	.studeren {
+		display: flex;
+		justify-content: start;
+		text-align: right;
+		margin-right: 100px;
+		margin-top: 0px;
+	}
+	.studerenExtra {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: right;
+		margin-right: 120px;
+	}
+	.studerenExtra p {
+		color: white;
+		text-align: right;
+		margin-left: 480px;
+		margin-bottom: 10px;
+		margin-top: 30px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+
+	.studerenExtra li {
+		text-align: right;
+		margin-bottom: 5px;
+	}
+
+	.studerenExtra a {
+		font-family: "Bodoni MT", serif;
+		font-size: 12pt;
+		font-style: italic;
+		font-weight: 800;
+		margin-top: 30px;
+		align-self: flex-end;
+		color: white;
+		background-color: #bf2126;
+		border-radius: 5px;
+		padding: 18px;
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 20px;
+	}
+
+	.studerenExtra h1 {
+		display: flex;
+		justify-content: right;
+		text-align: right;
+		margin-left: 520px;
+		margin-top: 235px;
+		padding-left: 400px;
+		height: 40px;
+		width: 190px;
+	}
+
+	.studeren img {
+		display: flex;
+		display: inline-block;
+		justify-content: start;
+		align-items: left;
+		width: 450px;
+		margin-left: 130px;
+		padding-bottom: 150px;
+		padding-top: 100px;
+	}
+
+	/* Fourth Image */
+
+	.weirdStuff {
+		display: flex;
+		justify-content: start;
+		text-align: left;
+		margin-right: 100px;
+	}
+	.contact {
+		flex-direction: column;
+		display: flex;
+		justify-content: start;
+		text-align: left;
+	}
+	.contact p {
+		display: flex;
+		color: white;
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 180px;
+		margin-right: 500px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15pt;
+	}
+
+	.smol p {
+		padding-top: 0px;
+		padding-left: 180px;
+	}
+
+	.smol {
+		margin-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.contact h1 {
+		display: flex;
+		justify-content: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 100px;
+		padding-left: 180px;
+		height: 40px;
+		width: 190px;
+		margin-bottom: 20px;
+	}
+
+	.weirdStuff img {
+		width: 700px;
+		margin-left: 0px;
+		margin-bottom: 100px;
+		margin-top: 150px;
+	}
+
+	/* Footer */
+	footer {
+		background-color: #c8102e;
+		color: white;
+		padding: 0px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; /* Ensures equal spacing between items */
+		align-items: flex-start; /* Aligns items to the top */
+		text-align: left;
+		flex-wrap: nowrap; /* Prevents wrapping of items */
+	}
+
+	footer h3 {
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	footer p,
+	footer a {
+		color: white;
+		text-decoration: none;
+		font-size: 0.9rem;
+		margin: 5px 0;
+	}
+
+	footer a:hover {
+		text-decoration: none;
+	}
+
+	.logo1 {
+		height: 100px;
+		margin-left: 100px;
+		margin-top: 100px;
+	}
+
+	.contact-footer {
+		margin-left: 600px;
+	}
+	.contact-footer h3,
+	p {
+		text-align: left;
+	}
+
+	.social-icons {
+		text-align: center;
+		margin-left: 400px;
+	}
+
+	.social-icons img {
+		height: 30px;
+	}
+
+	.navigatie {
+		margin-left: 1500px;
+		margin-right: 100px;
+	}
+	.navigatie a {
+		display: block;
+		margin-bottom: 5px;
 	}
 }
