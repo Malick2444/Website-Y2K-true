@@ -808,6 +808,11 @@ p {
 	.bigtext h3 {
 		font-size: 26pt;
 	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 
 	.footer-links {
 		text-align: center;
