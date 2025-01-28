@@ -403,7 +403,7 @@ body {
 }
 
 .logo1 img {
-	height: 100px;
+	height: 80px;
 	width: auto;
 	margin-right: 50px;
 	margin-left: 140px;
@@ -413,8 +413,6 @@ body {
 	display: block;
 	font-weight: normal;
 }
-/* Footer */
-/* Footer */
 
 /* Footer */
 footer {
@@ -540,7 +538,7 @@ p {
 }
 
 .logo img {
-	height: 60px; /* Consistent logo size */
+	height: 50px; /* Consistent logo size */
 	max-width: none; /* Ensure proper scaling */
 	object-fit: contain; /* Maintain the aspect ratio */
 	padding-right: 350px;
@@ -751,52 +749,66 @@ p {
 	.bigtext-left {
 		margin: 20px auto; /* Add spacing between elements */
 	}
-	.footer {
+	footer {
 		display: flex;
-		flex-direction: column; /* Stack items vertically */
-		align-items: center; /* Center elements horizontally */
-		text-align: center;
-		padding: 20px; /* Adjust padding for better spacing */
-		background-color: #bf2126;
-		height: auto; /* Remove fixed height, let the content adjust */
-		margin-bottom: 0;
-		overflow: hidden;
+		flex-direction: row;
+		flex-wrap: nowrap; /* Keep everything in one row */
+		overflow-x: hidden; /* Enable horizontal scrolling if content overflows */
+		padding: 20px; /* Reduce padding */
+		gap: 15px; /* Add spacing between sections */
 	}
 
-	.footer .logo1 img {
-		width: 80px;
-		height: auto;
-		margin-bottom: 10px; /* Add some spacing below the logo */
+	.logo1 {
+		height: 30px; /* Reduce logo height for mobile */
+		width: auto;
+		margin-right: 200px;
 	}
 
-	.footer-links {
-		display: flex;
-		flex-direction: row; /* Ensure links are in a row */
-		justify-content: center;
-		align-items: center; /* Align links vertically */
-		gap: 20px; /* Space between links */
-		margin-bottom: 10px; /* Reduced margin to keep it compact */
+	.logo1 img {
+		max-height: 40px; /* Set the maximum height for the logo */
+		width: auto; /* Ensure the width adjusts automatically to maintain aspect ratio */
+		object-fit: contain; /* Ensure the logo fits within the container without distortion */
+		margin-left: 10px; /* Align logo to the left */
+		margin-top: -60px;
 	}
 
-	.footer .footer-links a {
-		font-size: 18px;
-		color: white;
-		margin-right: 10px; /* Space between links */
+	footer h3 {
+		font-size: 14px; /* Reduce heading size */
 	}
 
-	.footer-icons {
-		display: flex; /* Ensure icons are in a row */
-		flex-direction: row; /* Align icons horizontally */
-		justify-content: center;
-		gap: 20px; /* Space between icons */
-		align-items: center; /* Align the icons to the center vertically */
-		margin-top: 10px; /* Adjust space between links and icons */
+	footer p,
+	footer a {
+		font-size: 0.8rem; /* Reduce text size for mobile */
 	}
 
-	.footer img {
-		width: 40px; /* Set the width of the icons */
-		height: 40px; /* Set the height of the icons */
-		margin: 0 10px; /* Margin between icons */
+	.contact-footer,
+	.social-icons,
+	.navigatie {
+		flex: 0 0 auto; /* Prevent shrinking */
+		min-width: 120px; /* Ensure sections stay visible */
+	}
+	.contact-footer {
+		margin-top: -30px;
+	}
+	.social-icons img {
+		height: 24px; /* Resize social media icons */
+	}
+
+	/* Specific fixes for individual sections */
+	.contact-footer {
+		margin-left: 0; /* Remove unnecessary margin */
+		margin-top: -10px;
+	}
+
+	.social-icons {
+		margin-left: 20px; /* Remove unnecessary margin */
+		margin-top: -130px;
+	}
+
+	.navigatie {
+		margin-right: -30px; /* Remove unnecessary margin */
+		margin-left: -100px;
+		margin-top: 45px;
 	}
 }
 
@@ -813,6 +825,7 @@ p {
 
 	p {
 		font-size: 14px; /* Smaller paragraph font size */
+		font-weight: 200px;
 	}
 
 	.carousel-text h3 {
@@ -909,7 +922,7 @@ p {
 	.logo img {
 		max-width: none;
 		max-height: none;
-		height: 100px;
+		height: 80px;
 		width: auto;
 		padding-top: 60px;
 		margin-left: -100px;
