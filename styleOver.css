@@ -83,6 +83,7 @@ h6 {
 p {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #bf2126;
+	font-size: 20px;
 }
 
 a {
@@ -240,7 +241,6 @@ a.active {
 	padding-top: 30px;
 	margin-left: 250px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
 }
 
 .twinkleExtra h1 {
@@ -287,7 +287,6 @@ a.active {
 	padding-left: 180px;
 	padding-right: 350px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
 }
 .schoolExtra h1 {
 	display: flex;
@@ -330,7 +329,6 @@ a.active {
 	padding-top: 30px;
 	margin-left: 400px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
 }
 .studerenExtra h1 {
 	display: flex;
@@ -577,7 +575,6 @@ p {
 		padding-top: 5px;
 		margin-left: 30px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 10pt;
 	}
 	.twinkleExtra h1 {
 		display: flex;
@@ -621,7 +618,6 @@ p {
 		padding-left: 20px;
 		padding-right: 0px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 10pt;
 	}
 	.schoolExtra h1 {
 		display: flex;
@@ -665,7 +661,6 @@ p {
 		padding-top: 10px;
 		margin-left: 0px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 10pt;
 	}
 	.studerenExtra h1 {
 		display: flex;
@@ -686,59 +681,44 @@ p {
 		margin-top: 50px;
 	}
 
-	/* Footer */
-
 	footer {
-		background-color: #bf2126;
-		color: #fff;
-		padding: 10px;
-	}
-
-	.footer {
-		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		text-align: center;
 	}
-
+	.footer-links {
+		text-align: center;
+	}
 	.logo1 {
+		margin: 50px auto;
+	}
+	.contact-footer h3 {
+		margin-left: 30px;
+	}
+	.contact-footer {
+		margin: 150px;
+		margin-left: 160px;
+	}
+	.contact-footer p {
+		padding: 20px;
+		text-align: center;
+	}
+	.social-icons {
+		margin: 100px 0;
+		margin-left: 0;
+	}
+
+	.social-icons img {
 		display: flex;
-		align-items: center;
+		margin-left: 240px;
 	}
 
-	.logo1 img {
-		margin-left: 0px;
-		margin-right: 0px;
-		width: 150px;
-		height: auto;
+	.navigatie {
+		margin: 50px 0;
+		margin-right: 0;
 	}
 
-	.school-name span:first-child {
-		display: block;
-		font-weight: bold;
-	}
-
-	.footer-links a {
-		margin-right: 10px;
-		text-decoration: none;
-		color: #fff;
-		font-size: 15pt;
-		margin-bottom: 10px;
-		margin-left: 20px;
-	}
-
-	.footer-links a:hover {
-		color: #bf2126;
-	}
-
-	.footer-icons img {
-		margin-right: 20px;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		height: 40px;
-	}
-
-	.footer-icons1 img {
-		height: 40px;
-		margin-right: 0px;
+	.navigatie a {
+		padding: 10px;
 	}
 }

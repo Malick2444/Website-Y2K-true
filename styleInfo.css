@@ -203,7 +203,7 @@
 	.twinkle {
 		display: flex;
 		justify-content: start;
-		text-align: right;
+		text-align: left;
 		margin-right: 100px;
 		margin-top: 0px;
 	}
@@ -212,16 +212,15 @@
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
-		text-align: right;
+		text-align: left;
 		margin-right: 20px;
 	}
 
 	.twinkleExtra p {
 		display: flex;
 		color: white;
-		text-align: right;
 		padding-top: 30px;
-		margin-left: 380px;
+		margin-left: 270px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
 		margin-right: 80px;
@@ -232,9 +231,10 @@
 		font-style: italic;
 		font-weight: 800;
 		font-size: 12pt;
-		margin-right: 80px;
+		margin-right: 0px;
+		margin-left: 270px;
 		display: inline;
-		align-self: flex-end;
+		align-self: flex-start;
 		color: white;
 		background-color: #bf2126;
 		border-radius: 5px;
@@ -242,13 +242,13 @@
 		padding-left: 30px;
 		padding-right: 30px;
 		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.twinkleExtra h1 {
 		display: flex;
-		justify-content: right;
-		text-align: right;
-		margin-left: 630px;
+		justify-content: left;
+		margin-left: 270px;
 		margin-top: 270px;
 		padding-left: 0px;
 		height: 40px;
@@ -263,7 +263,7 @@
 		width: 550px;
 		height: 400px;
 		margin-left: 130px;
-		margin-top: 280px;
+		margin-top: 330px;
 		margin-right: 0px;
 		margin-bottom: 300px;
 	}
@@ -347,7 +347,7 @@
 		justify-content: start;
 		text-align: right;
 		margin-right: 100px;
-		margin-top: 200px;
+		margin-top: 0px;
 	}
 	.studerenExtra {
 		flex-direction: column;
@@ -358,10 +358,10 @@
 	}
 	.studerenExtra p {
 		color: white;
-		text-align: right;
-		margin-left: 480px;
+		text-align: left;
+		margin-left: 320px;
 		margin-bottom: 10px;
-		margin-top: 30px;
+		margin-top: 0px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
 	}
@@ -377,7 +377,8 @@
 		font-style: italic;
 		font-weight: 800;
 		margin-top: 30px;
-		align-self: flex-end;
+		margin-left: 320px;
+		align-self: flex-start;
 		color: white;
 		background-color: #bf2126;
 		border-radius: 5px;
@@ -391,8 +392,9 @@
 		display: flex;
 		justify-content: right;
 		text-align: right;
-		margin-left: 520px;
-		margin-top: 235px;
+		margin-left: 250px;
+		margin-top: 200px;
+		margin-bottom: 30px;
 		padding-left: 400px;
 		height: 40px;
 		width: 190px;
@@ -463,77 +465,77 @@
 		margin-bottom: 100px;
 		margin-top: 150px;
 	}
+}
 
-	/* Footer */
-	footer {
-		background-color: #c8102e;
-		color: white;
-		padding: 30px 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between; /* Ensures equal spacing between items */
-		align-items: flex-start; /* Aligns items to the top */
-		text-align: left;
-		flex-wrap: nowrap; /*Prevents wrapping of items */
-	}
+/* Footer */
+footer {
+	background-color: #c8102e;
+	color: white;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* Ensures equal spacing between items */
+	align-items: flex-start; /* Aligns items to the top */
+	text-align: left;
+	flex-wrap: nowrap; /*Prevents wrapping of items */
+}
 
-	footer h3 {
-		font-size: 25px;
-		font-weight: bold;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-		color: white;
-	}
+footer h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: white;
+}
 
-	footer p,
-	footer a {
-		color: white;
-		text-decoration: none;
-		font-size: 0.9rem;
-		margin: 5px 0;
-	}
+footer p,
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin: 5px 0;
+}
 
-	footer a:hover {
-		text-decoration: none;
-	}
+footer a:hover {
+	text-decoration: none;
+}
 
-	.logo1 {
-		height: 100px;
-		margin-left: 100px;
-		margin-top: 20px;
-	}
+.logo1 {
+	height: 100px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
 
-	.contact-footer {
-		margin-left: 700px;
-		margin-top: -100px;
-	}
-	.contact-footer h3,
-	p {
-		text-align: left;
-	}
+.contact-footer {
+	margin-left: 700px;
+	margin-top: -100px;
+}
+.contact-footer h3,
+p {
+	text-align: left;
+}
 
-	.social-icons {
-		text-align: center;
-		margin-left: 1120px;
-		margin-top: -100px;
-	}
+.social-icons {
+	text-align: center;
+	margin-left: 1120px;
+	margin-top: -100px;
+}
 
-	.social-icons img {
-		height: 30px;
-	}
+.social-icons img {
+	height: 30px;
+}
 
-	.social-icons a {
-		padding: 10px;
-	}
+.social-icons a {
+	padding: 10px;
+}
 
-	.navigatie {
-		margin-right: 150px;
-		margin-top: 20px;
-	}
-	.navigatie a {
-		display: block;
-		margin-bottom: 5px;
-	}
+.navigatie {
+	margin-right: 150px;
+	margin-top: 20px;
+}
+.navigatie a {
+	display: block;
+	margin-bottom: 5px;
 }
 @media screen and (max-width: 768px) {
 	/* Normalize */
@@ -619,6 +621,7 @@
 		font-family: Arial, Helvetica, sans-serif;
 		color: #bf2126;
 		font-size: 20px;
+		line-height: 1.7;
 	}
 
 	a {
@@ -723,7 +726,7 @@
 		padding-top: 30px;
 		margin-left: 20px;
 		font-family: Arial, Helvetica, sans-serif;
-		line-height: 1.7;
+
 		margin-right: 40px;
 	}
 
@@ -742,13 +745,14 @@
 		padding-left: 30px;
 		padding-right: 30px;
 		margin-top: 20px;
+		margin-bottom: 30px;
 	}
 
 	.twinkleExtra h1 {
 		display: flex;
 		justify-content: right;
 		text-align: right;
-		margin-left: 100px;
+		margin-left: 130px;
 		margin-top: 70px;
 		padding-left: 0px;
 		height: 40px;
@@ -794,7 +798,7 @@
 		text-align: left;
 		margin-left: 0px;
 		margin-top: 150px;
-		padding-left: 160px;
+		padding-left: 140px;
 		height: 40px;
 	}
 
@@ -816,31 +820,26 @@
 
 	.studeren {
 		display: flex;
+		flex-direction: column-reverse;
 		justify-content: start;
-		text-align: right;
+		text-align: center;
 		margin-right: 100px;
-		margin-top: 500px;
+		margin-top: 100px;
 	}
 	.studerenExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
-		text-align: right;
-		margin-right: 120px;
+		text-align: center;
+		margin-right: 0px;
 	}
 	.studerenExtra p {
 		color: white;
-		text-align: right;
-		margin-left: 480px;
+		text-align: center;
+		margin-left: 90px;
 		margin-bottom: 10px;
-		margin-top: 30px;
+		margin-top: 0px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 15pt;
-	}
-
-	.studerenExtra li {
-		text-align: right;
-		margin-bottom: 5px;
 	}
 
 	.studerenExtra a {
@@ -856,16 +855,18 @@
 		padding: 18px;
 		padding-left: 30px;
 		padding-right: 30px;
-		margin-top: 20px;
+		margin-top: 30px;
+		margin-right: 35px;
 	}
 
 	.studerenExtra h1 {
 		display: flex;
-		justify-content: right;
-		text-align: right;
-		margin-left: 520px;
-		margin-top: 235px;
-		padding-left: 400px;
+		justify-content: center;
+		text-align: center;
+		margin-left: 15px;
+		margin-top: 160px;
+		margin-bottom: 25px;
+		padding-left: 200px;
 		height: 40px;
 		width: 190px;
 	}
@@ -875,8 +876,8 @@
 		display: inline-block;
 		justify-content: start;
 		align-items: left;
-		width: 450px;
-		margin-left: 130px;
+		width: 400px;
+		margin-left: 0px;
 		padding-bottom: 150px;
 		padding-top: 100px;
 	}
@@ -885,15 +886,14 @@
 
 	.weirdStuff {
 		display: flex;
-		justify-content: start;
-		text-align: left;
-		margin-right: 100px;
+		justify-content: column-reverse;
+		text-align: center;
 	}
 	.contact {
 		flex-direction: column;
 		display: flex;
-		justify-content: start;
-		text-align: left;
+		justify-content: center;
+		text-align: center;
 	}
 	.contact p {
 		display: flex;
@@ -930,74 +930,53 @@
 	}
 
 	.weirdStuff img {
-		width: 700px;
+		width: 600px;
 		margin-left: 0px;
 		margin-bottom: 100px;
 		margin-top: 150px;
+		margin-left: 0px;
 	}
 
-	/* Footer */
+	/* Mobile Footer */
+
 	footer {
-		background-color: #c8102e;
-		color: white;
-		padding: 0px 0;
-		display: flex;
 		flex-direction: column;
-		justify-content: space-between; /* Ensures equal spacing between items */
-		align-items: flex-start; /* Aligns items to the top */
-		text-align: left;
-		flex-wrap: nowrap; /* Prevents wrapping of items */
-	}
-
-	footer h3 {
-		font-size: 25px;
-		font-weight: bold;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-		color: white;
-	}
-
-	footer p,
-	footer a {
-		color: white;
-		text-decoration: none;
-		font-size: 0.9rem;
-		margin: 5px 0;
-	}
-
-	footer a:hover {
-		text-decoration: none;
-	}
-
-	.logo1 {
-		height: 100px;
-		margin-left: 100px;
-		margin-top: 100px;
-	}
-
-	.contact-footer {
-		margin-left: 600px;
-	}
-	.contact-footer h3,
-	p {
-		text-align: left;
-	}
-
-	.social-icons {
+		align-items: center;
 		text-align: center;
-		margin-left: 400px;
+	}
+	.footer-links {
+		text-align: center;
+	}
+	.logo1 {
+		margin: 50px auto;
+	}
+	.contact-footer h3 {
+		margin-left: 30px;
+	}
+	.contact-footer {
+		margin: 150px;
+		margin-left: 160px;
+	}
+	.contact-footer p {
+		padding: 20px;
+		text-align: center;
+	}
+	.social-icons {
+		margin: 100px 0;
+		margin-left: 0;
 	}
 
 	.social-icons img {
-		height: 30px;
+		display: flex;
+		margin-left: 240px;
 	}
 
 	.navigatie {
-		margin-left: 1500px;
-		margin-right: 100px;
+		margin: 50px 0;
+		margin-right: 0;
 	}
+
 	.navigatie a {
-		display: block;
-		margin-bottom: 5px;
+		padding: 10px;
 	}
 }
