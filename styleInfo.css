@@ -265,7 +265,7 @@
 		margin-left: 130px;
 		margin-top: 280px;
 		margin-right: 0px;
-		margin-bottom: 150px;
+		margin-bottom: 300px;
 	}
 
 	/* second image */
@@ -285,6 +285,8 @@
 	}
 	.schoolExtra p {
 		display: flex;
+		align-self: left;
+		align-items: left;
 		color: white;
 		text-align: left;
 		padding-top: 30px;
@@ -292,9 +294,10 @@
 		padding-right: 350px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
+		margin-right: 500px;
 	}
 
-	.schoolExtra a {
+	.button a {
 		font-family: "Bodoni MT", serif;
 		font-style: italic;
 		font-weight: 800;
@@ -319,17 +322,22 @@
 		margin-top: 220px;
 		padding-left: 180px;
 		height: 40px;
+		margin-bottom: 10px;
 	}
 
-	.school img {
-		display: flex;
-		display: inline-block;
-		justify-content: start;
-		align-items: left;
-		width: 550px;
-		margin-left: 90px;
-		margin-right: 10px;
-		margin-top: 100px;
+	#map {
+		position: relative;
+		top: -230px;
+		background-color: transparent;
+		width: 700px;
+		height: 400px;
+		margin-left: 800px;
+		margin-right: 200px;
+		flex-shrink: 0;
+	}
+
+	#map a:hover {
+		background-color: transparent;
 	}
 
 	/* third image */
@@ -339,7 +347,7 @@
 		justify-content: start;
 		text-align: right;
 		margin-right: 100px;
-		margin-top: 0px;
+		margin-top: 200px;
 	}
 	.studerenExtra {
 		flex-direction: column;
