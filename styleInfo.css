@@ -329,9 +329,9 @@
 		position: relative;
 		top: -230px;
 		background-color: transparent;
-		width: 700px;
+		width: 600px;
 		height: 400px;
-		margin-left: 800px;
+		margin-left: 900px;
 		margin-right: 200px;
 		flex-shrink: 0;
 	}
@@ -607,7 +607,7 @@
 	h1 {
 		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 			"Times New Roman", serif;
-		font-size: 24px;
+		font-size: 26pt;
 		font-style: italic;
 		font-variant: normal;
 		font-weight: 800;
@@ -618,7 +618,7 @@
 	p {
 		font-family: Arial, Helvetica, sans-serif;
 		color: #bf2126;
-		font-size: 10pt;
+		font-size: 20px;
 	}
 
 	a {
@@ -723,7 +723,7 @@
 		padding-top: 30px;
 		margin-left: 20px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 15pt;
+		line-height: 1.7;
 		margin-right: 40px;
 	}
 
@@ -781,28 +781,12 @@
 		display: flex;
 		color: white;
 		text-align: center;
+		align-self: center;
 		padding-top: 30px;
-		margin-left: 40px;
+		margin-left: 30px;
 		margin-right: 50px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
-	}
-
-	.schoolExtra a {
-		font-family: "Bodoni MT", serif;
-		font-style: italic;
-		font-weight: 800;
-		font-size: 12pt;
-		display: flex;
-		padding-top: 10px;
-		align-self: flex-start;
-		color: white;
-		background-color: #bf2126;
-		border-radius: 5px;
-		padding: 18px;
-		padding-left: 30px;
-		margin-top: 20px;
-		margin-left: 120px;
 	}
 	.schoolExtra h1 {
 		display: flex;
@@ -814,14 +798,18 @@
 		height: 40px;
 	}
 
-	.school img {
-		display: flex;
-		display: inline-block;
-		justify-content: start;
-		align-items: left;
-		width: 400px;
-		margin-left: 10px;
-		margin-top: 100px;
+	#map {
+		position: relative;
+		top: 50px;
+		flex-shrink: 0;
+		background-color: transparent;
+		width: 370px;
+		height: 400px;
+		margin-left: 30px;
+	}
+
+	#map a:hover {
+		background-color: transparent;
 	}
 
 	/* third image */
@@ -831,7 +819,7 @@
 		justify-content: start;
 		text-align: right;
 		margin-right: 100px;
-		margin-top: 0px;
+		margin-top: 500px;
 	}
 	.studerenExtra {
 		flex-direction: column;
