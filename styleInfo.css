@@ -134,48 +134,43 @@
 
 	.header {
 		width: 100%;
+		margin-top: 60px;
 	}
 
 	/* Navigation Bar */
 
 	.nav-bar {
-		margin-left: 4.15%;
-		justify-content: flex-start;
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		background-color: black;
-		padding-top: 0px;
+		padding: 10px 150px;
+		margin-right: 155px;
 		text-decoration: none;
-	}
-
-	/* Logo */
-
-	.logo img {
-		max-width: none;
-		max-height: none;
-		width: 210px;
-		height: auto;
-		padding-top: 87px;
-		margin-left: 107px;
+		padding-left: 20px;
 	}
 
 	/* Navigation Links */
 	.menu {
 		display: flex;
-		gap: 150px;
-		margin-right: 0px;
-		margin-left: 403px;
+		gap: 160px;
 	}
 
 	.menu a {
-		margin-top: 110px;
 		color: white;
 		text-decoration: none;
-		z-index: 10;
-		font-size: 13.5pt;
+		font-size: 18pt;
+		font-weight: 100;
+	}
+
+	.menu a:hover {
+		text-decoration: none;
+		color: #bf2126;
 	}
 
 	.menu a.active {
-		color: red;
+		color: #bf2126;
+		font-weight: 560;
 	}
 
 	.inschrijvenExtra a:hover {
@@ -197,6 +192,26 @@
 	.menu a:hover {
 		text-decoration: none;
 		color: #bf2126;
+	}
+
+	/* Logo */
+
+	.logo {
+		flex: 1; /* Push the logo to the left */
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding-right: 0px;
+		padding-left: 170px;
+	}
+
+	.logo img {
+		height: 50px; /* Consistent logo size */
+		max-width: none; /* Ensure proper scaling */
+		object-fit: contain; /* Maintain the aspect ratio */
+		padding-right: 0px;
+		padding-left: 100px;
+		width: auto;
 	}
 
 	/* First Image */
