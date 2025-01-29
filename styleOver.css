@@ -646,20 +646,20 @@ p {
 	.studeren {
 		display: flex;
 		justify-content: start;
-		text-align: right;
+		text-align: left;
 		margin-right: 100px;
 	}
 	.studerenExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
-		text-align: right;
+		text-align: left;
 		margin-right: 100px;
 	}
 	.studerenExtra p {
 		display: flex;
 		color: white;
-		text-align: right;
+		text-align: left;
 		padding-top: 10px;
 		margin-left: 0px;
 		font-family: Arial, Helvetica, sans-serif;
@@ -667,8 +667,8 @@ p {
 	.studerenExtra h1 {
 		display: flex;
 		justify-content: right;
-		text-align: right;
-		margin-left: 50px;
+		text-align: left;
+		margin-left: 0px;
 		margin-top: 0px;
 		padding-left: 0px;
 	}
