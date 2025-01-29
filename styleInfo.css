@@ -518,14 +518,14 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.logo1 {
-	height: 100px;
+.logo1 img {
+	width: 250px;
 	margin-left: 100px;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .contact-footer {
-	margin-left: 700px;
+	margin-left: 650px;
 	margin-top: -100px;
 }
 .contact-footer h3,
@@ -535,7 +535,7 @@ p {
 
 .social-icons {
 	text-align: center;
-	margin-left: 1120px;
+	margin-left: 970px;
 	margin-top: -100px;
 }
 
