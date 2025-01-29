@@ -17,7 +17,7 @@ body {
 h1 {
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 		"Times New Roman", serif;
-	font-size: 48px;
+	font-size: 48pt;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 800;
@@ -84,6 +84,7 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #bf2126;
 	font-size: 20px;
+	line-height: 1.4;
 }
 
 a {
@@ -223,35 +224,35 @@ a.active {
 .twinkle {
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 100px;
 	margin-top: 100px;
+	margin-bottom: 40px;
 }
 .twinkleExtra {
 	flex-direction: column;
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 200px;
 }
 .twinkleExtra p {
 	display: flex;
 	color: white;
-	text-align: right;
+	text-align: left;
 	padding-top: 30px;
-	margin-left: 250px;
+	margin-left: 165px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .twinkleExtra h1 {
 	display: flex;
-	justify-content: right;
-	text-align: right;
-	margin-left: 380px;
+	text-align: left;
+	margin-left: -250px;
 	margin-top: 200px;
+	margin-bottom: 10px;
 	padding-left: 420px;
-	height: 40px;
-	width: 190px;
+	margin-right: 200px;
 }
 
 .twinkle img {
@@ -285,7 +286,7 @@ a.active {
 	text-align: left;
 	padding-top: 30px;
 	padding-left: 180px;
-	padding-right: 350px;
+	margin-right: 140px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 .schoolExtra h1 {
@@ -299,12 +300,13 @@ a.active {
 }
 
 .school img {
-	display: inline-block;
+	position: relative;
+	top: -100px;
 	justify-content: start;
 	align-items: left;
-	width: 600px;
-	padding-left: 20px;
-	margin-right: 80px;
+	width: 900px;
+	padding-left: 0px;
+	margin-right: 100px;
 }
 
 /* third image */
@@ -312,20 +314,20 @@ a.active {
 .studeren {
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 100px;
 }
 .studerenExtra {
 	flex-direction: column;
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 100px;
 }
 .studerenExtra p {
 	display: flex;
 	color: white;
-	text-align: right;
+	text-align: left;
 	padding-top: 30px;
 	margin-left: 400px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -334,7 +336,7 @@ a.active {
 	display: flex;
 	justify-content: right;
 	text-align: right;
-	margin-left: 520px;
+	margin-left: 370px;
 	margin-top: 200px;
 	padding-left: 440px;
 	height: 40px;
@@ -667,7 +669,7 @@ p {
 		justify-content: right;
 		text-align: right;
 		margin-left: 50px;
-		margin-top: 60px;
+		margin-top: 0px;
 		padding-left: 0px;
 	}
 
@@ -678,7 +680,7 @@ p {
 		width: 250px;
 		height: 250px;
 		margin-left: 0px;
-		margin-top: 50px;
+		margin-top: 0px;
 	}
 
 	footer {
