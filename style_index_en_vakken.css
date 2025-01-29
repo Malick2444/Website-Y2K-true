@@ -83,6 +83,12 @@ p {
 	font-size: 20px;
 }
 
+.vakken-page .other-text.finalvakken p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 20px;
+}
+
 a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 800;
@@ -228,6 +234,9 @@ body {
 	align-items: center;
 	width: 100%;
 	padding: 20px;
+	position: relative;
+	height: 800px;
+	margin-top: 100px;
 }
 
 .carousel-item {
@@ -281,8 +290,9 @@ body {
 	font-weight: bold;
 	font-size: 25pt; /* Approximately 33.33px */
 	color: white;
-	line-height: 1;
-	max-width: 100%;
+	line-height: 1.2;
+
+	width: 150%;
 }
 
 #carouselTitle {
@@ -294,6 +304,7 @@ body {
 	font-style: italic;
 	font-weight: 900; /* Black weight */
 	font-size: 16pt; /* Approximately 21.33px */
+	margin-top: 20px;
 }
 
 .arrow {
@@ -322,7 +333,7 @@ body {
 	transform: translateX(100px);
 }
 #carouselImage[data-index="1"] {
-	transform: translateY(-10px); /* Example adjustment for the second image */
+	transform: translateY(-50px); /* Example adjustment for the second image */
 	transform: translateX(120px); /* Example horizontal adjustment */
 	transform: scale(1);
 }
@@ -351,6 +362,7 @@ body {
 .other-text,
 .other-image {
 	flex: 1;
+	margin-bottom: 70px;
 }
 
 .bigtext {
@@ -358,7 +370,7 @@ body {
 	align-items: flex-start; /* Adjust vertical alignment */
 	justify-content: flex-start; /* Aligns items to the left initially */
 	margin-top: 50px;
-	margin-bottom: 150px;
+	margin-bottom: 200px;
 }
 .bigtext-right {
 	margin-left: 190px; /* Adjust the value to move it further to the right */
@@ -384,6 +396,7 @@ body {
 .reverse {
 	flex-direction: row-reverse; /* Reverse the layout for alternating images */
 	margin-left: 10%;
+	margin-bottom: 80px;
 }
 .reverse .footer {
 	background-color: black;
@@ -491,17 +504,22 @@ p {
 }
 
 #carouselImage[data-index="1"] {
-	transform: translateY(-10px) translateX(120px) scale(1.2); /* Example adjustment for the second image */
+	transform: translateY(-100px) translateX(120px) scale(1.2); /* Example adjustment for the second image */
 }
 
 #carouselImage[data-index="2"] {
 	/* Adjust horizontal alignment if necessary */
-	transform: translateY(50px) translateX(250px) scale(0.8);
+	transform: translateY(-80px) translateX(250px) scale(0.7);
 }
 
 #carouselImage[data-index="3"] {
 	/* Adjust horizontal alignment if necessary */
 	transform: translateY(50px) translateX(200px) scale(0.8);
+}
+
+#carouselImage[data-index="4"] {
+	/* Adjust horizontal alignment if necessary */
+	transform: translateY(-200px) translateX(200px) scale(0.8);
 }
 
 /*index css einde*/
@@ -525,6 +543,12 @@ p {
 	display: inline-block;
 	margin-right: 20px;
 	font-size: 18px;
+}
+
+.vakken-page .other .other-imageweg img {
+	width: 70%;
+	height: auto;
+	margin-right: 40px;
 }
 
 /* Logo */
@@ -627,6 +651,8 @@ p {
 	h5,
 	h6 {
 		line-height: 1.4; /* Adjust line height for headings */
+		font-family: "Bodoni MT", "Didot", "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
 	}
 
 	.other-text p {
@@ -643,6 +669,7 @@ p {
 
 	.vakken-page .other .other-text.firstvakken h3 {
 		margin-top: 30px;
+		font-size: 30pt;
 	}
 
 	.vakken-page .other .other-text.firstvakken p {
@@ -661,9 +688,15 @@ p {
 
 	.other h3 {
 		font-size: 26pt;
+		font-family: "Bodoni MT", "Didot", "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-style: italic;
 	}
 	.other.reverse h3 {
 		font-size: 26pt; /* Adjust the size for smaller screens */
+		font-family: "Bodoni MT", "Didot", "Didot LT STD", "Hoefler Text", Garamond,
+			"Times New Roman", serif;
+		font-style: italic;
 	}
 
 	/* Scrolling Banner */
