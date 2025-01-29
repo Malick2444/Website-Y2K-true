@@ -17,7 +17,7 @@ body {
 h1 {
 	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 		"Times New Roman", serif;
-	font-size: 48px;
+	font-size: 48pt;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 800;
@@ -83,6 +83,8 @@ h6 {
 p {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #bf2126;
+	font-size: 20px;
+	line-height: 1.4;
 }
 
 a {
@@ -174,41 +176,53 @@ a.active {
 /* Navigation Bar */
 
 .nav-bar {
-	margin-left: 70px;
-	justify-content: flex-start;
+	margin-top: 70px;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	background-color: black;
+	padding: 10px 150px;
+	margin-right: 155px;
 	text-decoration: none;
-}
-
-/* Logo */
-
-.logo img {
-	max-width: none;
-	max-height: none;
-	width: 210px;
-	height: auto;
-	padding-top: 87px;
-	margin-left: 107px;
+	padding-left: 20px;
 }
 
 /* Navigation Links */
 .menu {
 	display: flex;
-	gap: 150px;
-	margin-right: 0px;
-	margin-left: 403px;
+	gap: 160px;
 }
 
 .menu a {
-	margin-top: 110px;
 	color: white;
 	text-decoration: none;
-	z-index: 10;
-	font-size: 13.5pt;
+	font-size: 18pt;
+	font-weight: 100;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #bf2126;
 }
 
 .menu a.active {
+	color: #bf2126;
+	font-weight: 560;
+}
+
+.inschrijvenExtra a:hover {
+	background-color: #8b0000;
+}
+
+.locatieExtra a:hover {
+	background-color: #8b0000;
+}
+
+.infoDagenExtra a:hover {
+	background-color: #8b0000;
+}
+
+a.active {
 	color: red;
 }
 
@@ -217,41 +231,60 @@ a.active {
 	color: #bf2126;
 }
 
+/* Logo */
+
+.logo {
+	flex: 1; /* Push the logo to the left */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-right: 0px;
+	padding-left: 170px;
+}
+
+.logo img {
+	height: 50px; /* Consistent logo size */
+	max-width: none; /* Ensure proper scaling */
+	object-fit: contain; /* Maintain the aspect ratio */
+	padding-right: 0px;
+	padding-left: 100px;
+	width: auto;
+}
+
 /* First Image */
 
 .twinkle {
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 100px;
 	margin-top: 100px;
+	margin-bottom: 40px;
 }
 .twinkleExtra {
 	flex-direction: column;
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 200px;
 }
 .twinkleExtra p {
 	display: flex;
 	color: white;
-	text-align: right;
+	text-align: left;
 	padding-top: 30px;
-	margin-left: 250px;
+	margin-left: 165px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
 }
 
 .twinkleExtra h1 {
 	display: flex;
-	justify-content: right;
-	text-align: right;
-	margin-left: 380px;
+	text-align: left;
+	margin-left: -250px;
 	margin-top: 200px;
+	margin-bottom: 10px;
 	padding-left: 420px;
-	height: 40px;
-	width: 190px;
+	margin-right: 200px;
 }
 
 .twinkle img {
@@ -285,9 +318,8 @@ a.active {
 	text-align: left;
 	padding-top: 30px;
 	padding-left: 180px;
-	padding-right: 350px;
+	margin-right: 140px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
 }
 .schoolExtra h1 {
 	display: flex;
@@ -300,12 +332,13 @@ a.active {
 }
 
 .school img {
-	display: inline-block;
+	position: relative;
+	top: -100px;
 	justify-content: start;
 	align-items: left;
-	width: 600px;
-	padding-left: 20px;
-	margin-right: 80px;
+	width: 900px;
+	padding-left: 0px;
+	margin-right: 100px;
 }
 
 /* third image */
@@ -313,32 +346,31 @@ a.active {
 .studeren {
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 100px;
 }
 .studerenExtra {
 	flex-direction: column;
 	display: flex;
 	justify-content: start;
-	text-align: right;
+	text-align: left;
 	margin-right: 100px;
 }
 .studerenExtra p {
 	display: flex;
 	color: white;
-	text-align: right;
+	text-align: left;
 	padding-top: 30px;
-	margin-left: 400px;
+	margin-left: 360px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15pt;
 }
 .studerenExtra h1 {
 	display: flex;
 	justify-content: right;
 	text-align: right;
-	margin-left: 520px;
+	margin-left: 370px;
 	margin-top: 200px;
-	padding-left: 440px;
+	padding-left: 400px;
 	height: 40px;
 	width: 190px;
 }
@@ -577,7 +609,6 @@ p {
 		padding-top: 5px;
 		margin-left: 30px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 10pt;
 	}
 	.twinkleExtra h1 {
 		display: flex;
@@ -621,7 +652,6 @@ p {
 		padding-left: 20px;
 		padding-right: 0px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 10pt;
 	}
 	.schoolExtra h1 {
 		display: flex;
@@ -648,31 +678,30 @@ p {
 	.studeren {
 		display: flex;
 		justify-content: start;
-		text-align: right;
+		text-align: left;
 		margin-right: 100px;
 	}
 	.studerenExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
-		text-align: right;
+		text-align: left;
 		margin-right: 100px;
 	}
 	.studerenExtra p {
 		display: flex;
 		color: white;
-		text-align: right;
+		text-align: left;
 		padding-top: 10px;
 		margin-left: 0px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 10pt;
 	}
 	.studerenExtra h1 {
 		display: flex;
 		justify-content: right;
-		text-align: right;
-		margin-left: 50px;
-		margin-top: 60px;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 0px;
 		padding-left: 0px;
 	}
 
@@ -683,62 +712,47 @@ p {
 		width: 250px;
 		height: 250px;
 		margin-left: 0px;
-		margin-top: 50px;
+		margin-top: 0px;
 	}
-
-	/* Footer */
 
 	footer {
-		background-color: #bf2126;
-		color: #fff;
-		padding: 10px;
-	}
-
-	.footer {
-		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		text-align: center;
 	}
-
+	.footer-links {
+		text-align: center;
+	}
 	.logo1 {
+		margin: 50px auto;
+	}
+	.contact-footer h3 {
+		margin-left: 30px;
+	}
+	.contact-footer {
+		margin: 150px;
+		margin-left: 160px;
+	}
+	.contact-footer p {
+		padding: 20px;
+		text-align: center;
+	}
+	.social-icons {
+		margin: 100px 0;
+		margin-left: 0;
+	}
+
+	.social-icons img {
 		display: flex;
-		align-items: center;
+		margin-left: 240px;
 	}
 
-	.logo1 img {
-		margin-left: 0px;
-		margin-right: 0px;
-		width: 150px;
-		height: auto;
+	.navigatie {
+		margin: 50px 0;
+		margin-right: 0;
 	}
 
-	.school-name span:first-child {
-		display: block;
-		font-weight: bold;
-	}
-
-	.footer-links a {
-		margin-right: 10px;
-		text-decoration: none;
-		color: #fff;
-		font-size: 15pt;
-		margin-bottom: 10px;
-		margin-left: 20px;
-	}
-
-	.footer-links a:hover {
-		color: #bf2126;
-	}
-
-	.footer-icons img {
-		margin-right: 20px;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		height: 40px;
-	}
-
-	.footer-icons1 img {
-		height: 40px;
-		margin-right: 0px;
+	.navigatie a {
+		padding: 10px;
 	}
 }

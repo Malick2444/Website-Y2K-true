@@ -4,25 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Page 2</title>
-		<link rel="stylesheet" href="styleInfo.css" />
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-		<style>
-			/* Fullscreen layout for the map */
-			html, body {
-				height: 100%;
-				margin: 0;
-			}
-			#map {
-				height: 100%; /* Make the map fill the available space */
-			}
-		</style>
-		
+		<link rel="stylesheet" href="styleInfo.css" />		
 	</head>
 	<body>
 		<div class="scrolling-banner">
 			<div class="scrolling-text">
-				Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. 
+				Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag. Kom naar de infodag.
 			</div>
 		</div>
 
@@ -33,7 +20,7 @@
 				<div class="nav-bar">
 					<div class="logo">
 						<a href="index.html"
-							><img src="images/Erasmus Logo.png" alt="Erasmus logo"
+							><img src="images/erasmus logo-01.png" alt="Erasmus logo"
 						/></a>
 					</div>
 					<nav class="menu">
@@ -49,9 +36,9 @@
 
 			<!-- First Image + text -->
 
-			<div class="twinkle">
+			<div class="inschrijven">
 				<img src="images/Ster Katana.png" alt="Star with Katana" />
-				<div class="twinkleExtra">
+				<div class="inschrijvenExtra">
 					<h1>INSCHRIJVEN</h1>
 					<p>
 						Voor je je kan inschrijven moet je controleren of je thuisinstelling
@@ -82,16 +69,18 @@
 
 			<!-- Second Image + text -->
 			
-			<div class="school">
-				<div class="schoolExtra">
+			<div class="locatie">
+				<div class="locatieExtra">
 					<h1>LOCATIE</h1>
 					<p>Adres: Nijverheidskaai 170, 1070 Anderlecht</p>
 					<p>
-						Vind ons op Open Street Maps:
+						Vind ons op Google Maps:
 					</p>
 				
-					
-					<div id="map"></div>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5038.804072709278!2d4.322808000000001!3d50.842239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c40f19faf0f9%3A0x4ef5b683135ecb1e!2sErasmushogeschool%20Brussel%20%7C%20Campus%20Kaai!5e0!3m2!1sen!2sbe!4v1738139425665!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+
 				
 				</div>
 					
@@ -99,16 +88,16 @@
 
 			<!-- Third Image + text -->
 
-			<div class="studeren">
+			<div class="infoDagen">
 				<img src="images/star.png" alt="Stars" />
-				<div class="studerenExtra">
+				<div class="infoDagenExtra">
 					<h1>INFODAGEN</h1>
 					<p>We houden infodagen op:</p>
-					<li>Zaterdag 22 maart 2025, van 10u tot 15u</li>
-					<li>Zaterdag 3 mei 2025, van 10u tot 15u</li>
-					<li>Zaterdag 28 juni 2025, van 10u tot 15u</li>
-					<li>Zaterdag 6 september 2025, van 10u tot 15u</li>
-					<li>Woensdag 10 september 2025, van 17u tot 20u</li>
+					<p>Zaterdag 22 maart 2025, van 10u tot 15u</p>
+					<p>Zaterdag 3 mei 2025, van 10u tot 15u</p>
+					<p>Zaterdag 28 juni 2025, van 10u tot 15u</p>
+					<p>Zaterdag 6 september 2025, van 10u tot 15u</p>
+					<p>Woensdag 10 september 2025, van 17u tot 20u</p>
 					<a href="https://www.erasmushogeschool.be/nl/infodagen"
 						>INSCHRIJVEN</a
 					>
@@ -117,8 +106,8 @@
 
 			<!-- Fourth Image + Text -->
 
-			<div class="weirdStuff">
-				<div class="contact">
+			<div class="contact">
+				<div class="contactExtra">
 					<h1>CONTACT</h1>
 					<p>Campus Kaai:</p>
 					<div class="smol">
@@ -136,7 +125,7 @@
 			<footer>
                 <div class="footer">
                   <div class="logo1">
-                    <img src="images/erasmus-logo-wit.png" alt="Erasmus logo" />
+                    <img src="images/erasmus-logo-wit 1.png" alt="Erasmus logo" />
                   </div>
                   <nav class="footer-links">
                     <div class="contact-footer">
@@ -161,8 +150,6 @@
                       </div>
               </footer>
 			  <script src="function.js"></script>
-			<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-			<script src="map.js"></script>
 		
 		</div>
 	</body>

@@ -100,6 +100,37 @@ a.active {
 	color: #bf2126;
 }
 
+
+
+/* Stijl voor de titel (h3) in de VAKKEN-sectie */
+.firstvakken h3 {
+   
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
+		"Times New Roman", serif;
+	font-size: 50px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 800;
+	line-height: 26.4px;
+	color: #bf2126;
+	margin-bottom: 20px;
+	margin-left: 40%;
+   
+}
+
+/* Stijl voor de tekst (p) in de VAKKEN-sectie */
+.firstvakken p {
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 20px;
+	margin-left: 40%;
+  
+}
+
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -129,7 +160,7 @@ body {
 .scrolling-text {
 	display: flex; /* Using flex to line up the text side by side */
 	width: 100%; /* Full width of the banner */
-	animation: scroll-left 20s linear infinite; /* Infinite scroll animation */
+	animation: scroll-left 12.5s linear infinite; /* Infinite scroll animation */
 }
 
 .scrolling-text span {
@@ -161,6 +192,7 @@ body {
 	padding: 10px 50px; /* Adjust spacing around header */
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-top: 60px;
 }
 
 .header > div {
@@ -169,7 +201,11 @@ body {
 }
 
 .header p {
-	margin-left: 20px; /* Spacing for navigation text */
+	margin-left: 0px; /* Spacing for navigation text */
+}
+
+.menu a {
+	font-size: 25pt;
 }
 
 /* Add hover effect for header and footer links */
@@ -346,18 +382,54 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 5px; /* Reduced gap between text and image */
+	gap: 15px; /* Reduced gap between text and image */
 	padding: 10px; /* Adjust padding to reduce space around content */
 	text-align: left;
 	margin-right: 10%;
 }
 
-.other-image img {
-	max-width: 400px;
+/* .other-image img {
+	max-width: 800px;
 	height: auto;
 	object-fit: cover;
 	margin-left: 20%;
+} */
+
+
+
+
+.other-imageweg img {
+    width: 100%; 
+    max-width: 400px; 
+    margin-left: 20%;
 }
+
+/* Stijl voor de tweede afbeelding */
+.other-image img:nth-child(1) {
+    width: 100%;
+    max-width: 800px;
+	margin-left: 20%;
+   
+}
+
+/* Stijl voor de derde afbeelding */
+.other .other-image img[src="images/Computer.png"] {
+    width: 100%;
+    max-width: 500px;
+	margin-left: 20%;
+    
+}
+
+/* Stijl voor de vierde afbeelding */
+.other .other-image img[src="images/designright.png"] {
+    width: 100%;
+    max-width: 600px;
+	margin-left: 10%;
+   
+
+}
+
+
 
 .other-text,
 .other-image {
@@ -564,8 +636,8 @@ p {
 	height: 50px; /* Consistent logo size */
 	max-width: none; /* Ensure proper scaling */
 	object-fit: contain; /* Maintain the aspect ratio */
-	padding-right: 350px;
-	padding-left: 30px;
+	padding-right: 160px;
+	padding-left: 170px;
 
 	width: auto;
 }
@@ -584,14 +656,14 @@ p {
 /* Navigation Links */
 .menu {
 	display: flex;
-	gap: 150px;
+	gap: 160px;
 }
 
 .menu a {
 	color: white;
 	text-decoration: none;
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 18pt;
+	font-weight: 100;
 }
 
 .menu a:hover {
