@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			src: "images/senior_1.png",
 			title: "MATTEO  GIAMBARRES  STUDENT 2MCT",
 			description:
-				"Een erg interessante studierichting waar je veel kunt leren over diverse domeinen. Zo ontdek je wat je leuk vindt en kun je in het tweede jaar kiezen waarin je je wilt specialiseren.",
+				" ''Een erg interessante studierichting waar je veel kunt leren over diverse domeinen. Zo ontdek je wat je leuk vindt en kun je in het tweede jaar kiezen waarin je je wilt specialiseren. ''",
 		},
 		{
 			src: "images/senior_2.png",
