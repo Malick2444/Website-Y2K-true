@@ -13,12 +13,13 @@
 		background-color: black;
 		font-family: "Inter", sans-serif;
 		color: white;
+		overflow-x: hidden;
 	}
 
 	h1 {
 		font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
 			"Times New Roman", serif;
-		font-size: 48px;
+		font-size: 48pt;
 		font-style: italic;
 		font-variant: normal;
 		font-weight: 800;
@@ -177,15 +178,15 @@
 		color: red;
 	}
 
-	.twinkleExtra a:hover {
+	.inschrijvenExtra a:hover {
 		background-color: #8b0000;
 	}
 
-	.schoolExtra a:hover {
+	.locatieExtra a:hover {
 		background-color: #8b0000;
 	}
 
-	.studerenExtra a:hover {
+	.infoDagenExtra a:hover {
 		background-color: #8b0000;
 	}
 
@@ -200,7 +201,7 @@
 
 	/* First Image */
 
-	.twinkle {
+	.inschrijven {
 		display: flex;
 		justify-content: start;
 		text-align: left;
@@ -208,7 +209,7 @@
 		margin-top: 0px;
 	}
 
-	.twinkleExtra {
+	.inschrijvenExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
@@ -216,7 +217,7 @@
 		margin-right: 20px;
 	}
 
-	.twinkleExtra p {
+	.inschrijvenExtra p {
 		display: flex;
 		color: white;
 		padding-top: 30px;
@@ -226,7 +227,7 @@
 		margin-right: 80px;
 	}
 
-	.twinkleExtra a {
+	.inschrijvenExtra a {
 		font-family: "Bodoni MT", serif;
 		font-style: italic;
 		font-weight: 800;
@@ -245,7 +246,7 @@
 		margin-bottom: 20px;
 	}
 
-	.twinkleExtra h1 {
+	.inschrijvenExtra h1 {
 		display: flex;
 		justify-content: left;
 		margin-left: 270px;
@@ -255,7 +256,7 @@
 		width: 190px;
 	}
 
-	.twinkle img {
+	.inschrijven img {
 		display: flex;
 		display: inline-block;
 		justify-content: start;
@@ -270,20 +271,20 @@
 
 	/* second image */
 
-	.school {
+	.locatie {
 		display: flex;
 		justify-content: start;
 		text-align: left;
 		margin-right: 100px;
 	}
-	.schoolExtra {
+	.locatieExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
 		text-align: left;
 		margin-right: 100px;
 	}
-	.schoolExtra p {
+	.locatieExtra p {
 		display: flex;
 		align-self: left;
 		align-items: left;
@@ -314,49 +315,50 @@
 		margin-top: 20px;
 		margin-left: 180px;
 	}
-	.schoolExtra h1 {
+	.locatieExtra h1 {
 		display: flex;
 		justify-content: left;
 		text-align: left;
 		margin-left: 0px;
-		margin-top: 220px;
+		margin-top: 270px;
 		padding-left: 180px;
 		height: 40px;
 		margin-bottom: 10px;
 	}
 
-	#map {
+	.map {
 		position: relative;
-		top: -230px;
+		top: -280px;
 		background-color: transparent;
 		width: 600px;
 		height: 400px;
-		margin-left: 900px;
+		margin-left: 920px;
 		margin-right: 200px;
 		flex-shrink: 0;
 	}
 
-	#map a:hover {
+	.map a:hover {
 		background-color: transparent;
 	}
 
 	/* third image */
 
-	.studeren {
+	.infoDagen {
 		display: flex;
 		justify-content: start;
 		text-align: right;
 		margin-right: 100px;
 		margin-top: 0px;
 	}
-	.studerenExtra {
+	.infoDagenExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
 		text-align: right;
 		margin-right: 120px;
+		margin-left: 20px;
 	}
-	.studerenExtra p {
+	.infoDagenExtra p {
 		color: white;
 		text-align: left;
 		margin-left: 320px;
@@ -366,12 +368,12 @@
 		font-size: 15pt;
 	}
 
-	.studerenExtra li {
+	.infoDagenExtra li {
 		text-align: right;
 		margin-bottom: 5px;
 	}
 
-	.studerenExtra a {
+	.infoDagenExtra a {
 		font-family: "Bodoni MT", serif;
 		font-size: 12pt;
 		font-style: italic;
@@ -388,19 +390,19 @@
 		margin-top: 20px;
 	}
 
-	.studerenExtra h1 {
+	.infoDagenExtra h1 {
 		display: flex;
 		justify-content: right;
 		text-align: right;
-		margin-left: 250px;
-		margin-top: 200px;
+		margin-left: 360px;
+		margin-top: 100px;
 		margin-bottom: 30px;
 		padding-left: 400px;
 		height: 40px;
 		width: 190px;
 	}
 
-	.studeren img {
+	.infoDagen img {
 		display: flex;
 		display: inline-block;
 		justify-content: start;
@@ -408,31 +410,32 @@
 		width: 450px;
 		margin-left: 130px;
 		padding-bottom: 150px;
-		padding-top: 100px;
+		padding-top: 0px;
 	}
 
 	/* Fourth Image */
 
-	.weirdStuff {
+	.contact {
 		display: flex;
 		justify-content: start;
 		text-align: left;
 		margin-right: 100px;
+		margin-top: 70px;
 	}
-	.contact {
+	.contactExtra {
 		flex-direction: column;
 		display: flex;
 		justify-content: start;
 		text-align: left;
 	}
-	.contact p {
+	.contactExtra p {
 		display: flex;
 		color: white;
 		text-align: left;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-left: 180px;
-		margin-right: 500px;
+		margin-right: 470px;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 15pt;
 	}
@@ -447,7 +450,7 @@
 		padding-top: 20px;
 	}
 
-	.contact h1 {
+	.contactExtra h1 {
 		display: flex;
 		justify-content: left;
 		text-align: left;
@@ -459,7 +462,7 @@
 		margin-bottom: 20px;
 	}
 
-	.weirdStuff img {
+	.contact img {
 		width: 700px;
 		margin-left: 0px;
 		margin-bottom: 100px;
@@ -802,7 +805,7 @@ p {
 		height: 40px;
 	}
 
-	#map {
+	.map {
 		position: relative;
 		top: 50px;
 		flex-shrink: 0;
@@ -812,7 +815,7 @@ p {
 		margin-left: 30px;
 	}
 
-	#map a:hover {
+	.map a:hover {
 		background-color: transparent;
 	}
 
