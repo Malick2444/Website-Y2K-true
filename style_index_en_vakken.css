@@ -155,6 +155,7 @@ body {
 	padding: 10px 50px; /* Adjust spacing around header */
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-top: 60px;
 }
 
 .header > div {
@@ -163,7 +164,11 @@ body {
 }
 
 .header p {
-	margin-left: 20px; /* Spacing for navigation text */
+	margin-left: 0px; /* Spacing for navigation text */
+}
+
+.menu a {
+	font-size: 25pt;
 }
 
 /* Add hover effect for header and footer links */
@@ -540,8 +545,8 @@ p {
 	height: 50px; /* Consistent logo size */
 	max-width: none; /* Ensure proper scaling */
 	object-fit: contain; /* Maintain the aspect ratio */
-	padding-right: 350px;
-	padding-left: 30px;
+	padding-right: 160px;
+	padding-left: 170px;
 
 	width: auto;
 }
@@ -560,14 +565,14 @@ p {
 /* Navigation Links */
 .menu {
 	display: flex;
-	gap: 150px;
+	gap: 160px;
 }
 
 .menu a {
 	color: white;
 	text-decoration: none;
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 18pt;
+	font-weight: 100;
 }
 
 .menu a:hover {
