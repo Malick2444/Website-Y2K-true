@@ -137,6 +137,18 @@
 		}
 	}
 
+	.inschrijvenExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	.locatieExtra a:hover {
+		background-color: #8b0000;
+	}
+
+	.infoDagenExtra a:hover {
+		background-color: #8b0000;
+	}
+
 	.header {
 		width: 100%;
 		margin-top: 60px;
@@ -176,18 +188,6 @@
 	.menu a.active {
 		color: #bf2126;
 		font-weight: 560;
-	}
-
-	.inschrijvenExtra a:hover {
-		background-color: #8b0000;
-	}
-
-	.locatieExtra a:hover {
-		background-color: #8b0000;
-	}
-
-	.infoDagenExtra a:hover {
-		background-color: #8b0000;
 	}
 
 	a.active {
