@@ -94,37 +94,6 @@ a.active {
 	color: #bf2126;
 }
 
-
-
-/* Stijl voor de titel (h3) in de VAKKEN-sectie */
-.firstvakken h3 {
-   
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond,
-		"Times New Roman", serif;
-	font-size: 50px;
-	font-style: italic;
-	font-variant: normal;
-	font-weight: 800;
-	line-height: 26.4px;
-	color: #bf2126;
-	margin-bottom: 20px;
-	margin-left: 40%;
-   
-}
-
-/* Stijl voor de tekst (p) in de VAKKEN-sectie */
-.firstvakken p {
-
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	font-size: 20px;
-	margin-left: 40%;
-  
-}
-
-
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -371,54 +340,18 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 15px; /* Reduced gap between text and image */
+	gap: 5px; /* Reduced gap between text and image */
 	padding: 10px; /* Adjust padding to reduce space around content */
 	text-align: left;
 	margin-right: 10%;
 }
 
-/* .other-image img {
-	max-width: 800px;
+.other-image img {
+	max-width: 400px;
 	height: auto;
 	object-fit: cover;
 	margin-left: 20%;
-} */
-
-
-
-
-.other-imageweg img {
-    width: 100%; 
-    max-width: 400px; 
-    margin-left: 20%;
 }
-
-/* Stijl voor de tweede afbeelding */
-.other-image img:nth-child(1) {
-    width: 100%;
-    max-width: 800px;
-	margin-left: 20%;
-   
-}
-
-/* Stijl voor de derde afbeelding */
-.other .other-image img[src="images/Computer.png"] {
-    width: 100%;
-    max-width: 500px;
-	margin-left: 20%;
-    
-}
-
-/* Stijl voor de vierde afbeelding */
-.other .other-image img[src="images/designright.png"] {
-    width: 100%;
-    max-width: 600px;
-	margin-left: 10%;
-   
-
-}
-
-
 
 .other-text,
 .other-image {

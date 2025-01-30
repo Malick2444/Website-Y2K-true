@@ -418,25 +418,29 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.logo1 {
-	height: 100px;
-	margin-left: 100px;
-	margin-top: 20px;
+.logo1 img {
+	width: 210px;
+	margin-left: 110px;
+	margin-top: 26px;
 }
 
 .contact-footer {
-	margin-left: 700px;
-	margin-top: -100px;
+	margin-left: 600px;
+	margin-top: -90px;
 }
 .contact-footer h3,
 p {
 	text-align: left;
 }
 
+.contact-footer h3 {
+	font-weight: 800;
+}
+
 .social-icons {
 	text-align: center;
-	margin-left: 1120px;
-	margin-top: -100px;
+	margin-left: 970px;
+	margin-top: -103px;
 }
 
 .social-icons img {

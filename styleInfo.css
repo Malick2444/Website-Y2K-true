@@ -1,6 +1,11 @@
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+.wrapper {
+	margin-left: 5% !important;
+	margin-right: 5% !important;
+}
+
 @media screen and (min-width: 769px) {
 	/* Normalize */
 	* {
@@ -145,7 +150,7 @@
 		justify-content: space-between;
 		background-color: black;
 		padding: 10px 150px;
-		margin-right: 155px;
+		margin-right: 70px;
 		text-decoration: none;
 		padding-left: 20px;
 	}
@@ -202,7 +207,7 @@
 		align-items: center;
 		justify-content: flex-start;
 		padding-right: 0px;
-		padding-left: 170px;
+		padding-left: 86px;
 	}
 
 	.logo img {
@@ -519,24 +524,28 @@ footer a:hover {
 }
 
 .logo1 img {
-	width: 250px;
-	margin-left: 100px;
-	margin-top: 0px;
+	width: 210px;
+	margin-left: 110px;
+	margin-top: 26px;
 }
 
 .contact-footer {
-	margin-left: 650px;
-	margin-top: -100px;
+	margin-left: 600px;
+	margin-top: -90px;
 }
 .contact-footer h3,
 p {
 	text-align: left;
 }
 
+.contact-footer h3 {
+	font-weight: 800;
+}
+
 .social-icons {
 	text-align: center;
 	margin-left: 970px;
-	margin-top: -100px;
+	margin-top: -103px;
 }
 
 .social-icons img {
