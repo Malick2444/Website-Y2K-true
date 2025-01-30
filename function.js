@@ -26,25 +26,32 @@ document.addEventListener("DOMContentLoaded", () => {
 			src: "images/senior_1.png",
 			title: "MATTEO  GIAMBARRES  STUDENT 2MCT",
 			description:
-				" ''Een erg interessante studierichting waar je veel kunt leren over diverse domeinen. Zo ontdek je wat je leuk vindt en kun je in het tweede jaar kiezen waarin je je wilt specialiseren. ''",
+				"''Een erg interessante studierichting waar je veel kunt leren over diverse domeinen. Zo ontdek je wat je leuk vindt en kun je in het tweede jaar kiezen waarin je je wilt specialiseren.''",
 		},
 		{
 			src: "images/senior_2.png",
 			title: "RAMON DE&nbsp;RAES STUDENT&nbsp;2MCT",
 			description:
-				"Een boeiende en veelzijdige studierichting waarin je een brede waaier aan vakken verkent. Ideaal om je interesses te ontdekken en jezelf breed te ontwikkelen!",
+				"''Een boeiende en veelzijdige studierichting waarin je een brede waaier aan vakken verkent. Ideaal om je interesses te ontdekken en jezelf breed te ontwikkelen!''",
+			textY: "90%",
 		},
 		{
 			src: "images/senior_3.png",
 			title: "EREN SAHBAZ STUDENT&nbsp;2MCT",
 			description:
-				"Een leuke en uitdagende richting waar je niet alleen verschillende vakken verkent, maar ook werkt aan praktische vaardigheden zoals back-end ontwikkeling en het gebruik van technieken zoals async/await.",
+				"''Een leuke en uitdagende richting waar je niet alleen verschillende vakken verkent, maar ook werkt aan praktische vaardigheden zoals back-end ontwikkeling en het gebruik van technieken zoals async/await.''",
 		},
 		{
 			src: "images/senior_4.png",
 			title: "SOPHIA RAHMOUN STUDENT&nbsp;2MCT",
 			description:
-				"Een brede en goed gestructureerde opleiding waarin je veel ervaring opdoet in diverse domeinen. Je leert in een fijne omgeving met enthousiaste medestudenten en inspirerende docenten die je motiveren om het beste uit jezelf te halen!",
+				"''Een brede en goed gestructureerde opleiding waarin je veel ervaring opdoet in diverse domeinen. Je leert in een fijne omgeving met enthousiaste medestudenten en inspirerende docenten die je motiveren om het beste uit jezelf te halen!''",
+		},
+		{
+			src: "images/Docent.png",
+			title: "SOPHIA RAHMOUN STUDENT&nbsp;2MCT",
+			description:
+				"''Een brede en goed gestructureerde opleiding waarin je veel ervaring opdoet in diverse domeinen. Je leert in een fijne omgeving met enthousiaste medestudenten en inspirerende docenten die je motiveren om het beste uit jezelf te halen!''",
 		},
 	];
 
