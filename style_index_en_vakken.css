@@ -388,45 +388,42 @@ body {
 	margin-right: 10%;
 }
 
-/* .other-image img {
-	max-width: 800px;
+ .other-image img {
+	max-width: 450px;
 	height: auto;
 	object-fit: cover;
 	margin-left: 20%;
-} */
+} 
 
 
 
-
-.other-imageweg img {
-    width: 100%; 
-    max-width: 400px; 
-    margin-left: 20%;
-}
-
-/* Stijl voor de tweede afbeelding */
-.other-image img:nth-child(1) {
+/* Stijl voor de eerste afbeelding (Vreem Ding no.1) */
+.other .other-imageweg img[src="images/Vreem Ding no.1.png"] {
     width: 100%;
-    max-width: 800px;
-	margin-left: 20%;
+    max-width: 400px;
+    margin-left: 36%;
+}
+ 
+/* Stijl voor de tweede afbeelding (Camera) */
+.other .other-image img[src="images/Camera.png"] {
+    width: 100%;
+    max-width: 850px;
+    margin-left: 20%;
    
 }
-
-/* Stijl voor de derde afbeelding */
+ 
+/* Stijl voor de derde afbeelding (Computer) */
 .other .other-image img[src="images/Computer.png"] {
     width: 100%;
     max-width: 500px;
-	margin-left: 20%;
-    
+    margin-left: 8%;
 }
-
-/* Stijl voor de vierde afbeelding */
+ 
+/* Stijl voor de vierde afbeelding (Design) */
 .other .other-image img[src="images/designright.png"] {
     width: 100%;
     max-width: 600px;
-	margin-left: 10%;
-   
-
+    margin-left: 10%;
 }
 
 
